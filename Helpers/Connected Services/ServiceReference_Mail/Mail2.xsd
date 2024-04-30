@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://srv-app07.parlement.intra/MailService/Mail.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PrestigeMailService.WebService" />
+  <xs:import schemaLocation="http://srv-app07.parlement.intra/MailService/Mail.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://srv-app07.parlement.intra/MailService/Mail.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="RegisterAlert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/PrestigeMailService.WebService" minOccurs="0" name="param" nillable="true" type="q1:MailParams" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/PrestigeMailService.WebService" minOccurs="0" name="alertParams" nillable="true" type="q2:AlertParams" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterAlertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAlert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="idAlert" type="q3:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAlertResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAlerRange">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ids" nillable="true" type="q4:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAlerRangeResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendByIdTemplate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/PrestigeMailService.WebService" minOccurs="0" name="param" nillable="true" type="q5:MailParams" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendByIdTemplateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendByTemplateName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/PrestigeMailService.WebService" minOccurs="0" name="param" nillable="true" type="q6:MailParams" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendByTemplateNameResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterApplication">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nameApp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterApplicationResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterTemplate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="templateName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="appId" type="xs:int" />
+        <xs:element minOccurs="0" name="objet" nillable="true" type="xs:string" />
+        <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="parametres" nillable="true" type="q7:ArrayOfKeyValueOfstringstring" />
+        <xs:element minOccurs="0" name="stringTemplate" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterTemplateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TemplateList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idApplication" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TemplateListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/PrestigeMailService.WebService" minOccurs="0" name="TemplateListResult" nillable="true" type="q8:ArrayOfWsItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ApplicationList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ApplicationListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/PrestigeMailService.WebService" minOccurs="0" name="ApplicationListResult" nillable="true" type="q9:ArrayOfWsItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ParametersList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idTemplate" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ParametersListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/PrestigeMailService.WebService" minOccurs="0" name="ParametersListResult" nillable="true" type="q10:ArrayOfWsItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

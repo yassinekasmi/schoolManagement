@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MailService.Data.Models" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MailService.Data.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfAttachement">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Attachement" nillable="true" type="tns:Attachement" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAttachement" nillable="true" type="tns:ArrayOfAttachement" />
+  <xs:complexType name="Attachement">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BinFile" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="ContentType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="MailId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="MailStack" nillable="true" type="tns:MailStack" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Attachement" nillable="true" type="tns:Attachement" />
+  <xs:complexType name="MailStack">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ApplicationName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Attachements" nillable="true" type="tns:ArrayOfAttachement" />
+      <xs:element minOccurs="0" name="CreateDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="MailCC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MailContent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MailTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Object" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SendDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MailStack" nillable="true" type="tns:MailStack" />
+</xs:schema>

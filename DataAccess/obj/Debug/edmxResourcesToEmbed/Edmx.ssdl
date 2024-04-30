@@ -1,0 +1,1051 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CongresModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Aeroport">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nom" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ville" Type="nvarchar(max)" />
+    <Property Name="nomArabe" Type="nvarchar(max)" />
+    <Property Name="nomAnglais" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Congre">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="titre" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="dateDebut" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="dateFin" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="details" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="organismeId" Type="int" />
+    <Property Name="statutcongre" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CongreAeroport">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idCongre" Type="int" />
+    <Property Name="idAeroport" Type="int" />
+  </EntityType>
+  <EntityType Name="CongreHotel">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idCongre" Type="int" />
+    <Property Name="idHotel" Type="int" />
+  </EntityType>
+  <EntityType Name="CongreOrganisateur">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idCongre" Type="int" />
+    <Property Name="idOrganisateur" Type="int" />
+    <Property Name="idMission" Type="int" />
+  </EntityType>
+  <EntityType Name="Delegations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Delegation" Type="nvarchar" MaxLength="250" />
+    <Property Name="Details" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Document">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="titre" Type="nvarchar(max)" />
+    <Property Name="documentUrl" Type="nvarchar(max)" />
+    <Property Name="idCongre" Type="int" />
+    <Property Name="idParticipant" Type="int" />
+  </EntityType>
+  <EntityType Name="Entite">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nom" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="specialite" Type="nvarchar(max)" />
+    <Property Name="adresse" Type="nvarchar(max)" />
+    <Property Name="tel" Type="nvarchar(max)" />
+    <Property Name="email" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Hotel">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nom" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="adresse" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="tel" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="email" Type="nvarchar(max)" />
+    <Property Name="siteWeb" Type="nvarchar(max)" />
+    <Property Name="nomArabe" Type="nvarchar(max)" />
+    <Property Name="nomAnglais" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Mission">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="titre" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="description" Type="text" />
+  </EntityType>
+  <EntityType Name="Organisateur">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nom" Type="nvarchar" MaxLength="50" />
+    <Property Name="prenom" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="email" Type="nvarchar" MaxLength="50" />
+    <Property Name="tel" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="idEntite" Type="int" />
+    <Property Name="photoUrl" Type="nvarchar(max)" />
+    <Property Name="specialite" Type="nvarchar(max)" />
+    <Property Name="cin" Type="nvarchar" MaxLength="50" />
+    <Property Name="nomPrenomTel" Type="nvarchar" MaxLength="163" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="OrganisateurAeroport">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdOrganisateur" Type="int" />
+    <Property Name="IdAeroport" Type="int" />
+    <Property Name="DateJour" Type="date" />
+    <Property Name="HeureD" Type="time" Precision="7" />
+    <Property Name="HeureF" Type="time" Precision="7" />
+  </EntityType>
+  <EntityType Name="OrganisateurHotel">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdOrganisateur" Type="int" />
+    <Property Name="IdHotel" Type="int" />
+    <Property Name="DateJour" Type="date" />
+    <Property Name="HeureD" Type="time" Precision="7" />
+    <Property Name="HeureF" Type="time" Precision="7" />
+  </EntityType>
+  <EntityType Name="Organisme">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nom" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="details" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Participant">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdDelegation" Type="int" />
+    <Property Name="PaysOrigine" Type="nvarchar" MaxLength="100" />
+    <Property Name="nom" Type="nvarchar" MaxLength="100" />
+    <Property Name="nomUpdate" Type="bit" />
+    <Property Name="prenom" Type="nvarchar" MaxLength="100" />
+    <Property Name="prenomUpdate" Type="bit" />
+    <Property Name="tel" Type="nvarchar" MaxLength="100" />
+    <Property Name="Titre" Type="nvarchar" MaxLength="250" />
+    <Property Name="TitreUpdate" Type="bit" />
+    <Property Name="NPassportDelegue" Type="nvarchar" MaxLength="100" />
+    <Property Name="NvolArrivee" Type="nvarchar" MaxLength="100" />
+    <Property Name="NvolArriveeUpdate" Type="bit" />
+    <Property Name="DateArrivee" Type="date" />
+    <Property Name="DateArriveeUpdate" Type="bit" />
+    <Property Name="HeureArrivee" Type="time" Precision="7" />
+    <Property Name="HeureArriveeUpdate" Type="bit" />
+    <Property Name="IdAreoportArrivee" Type="int" />
+    <Property Name="IdAreoportArriveeUpdate" Type="bit" />
+    <Property Name="PaysDestination" Type="nvarchar" MaxLength="100" />
+    <Property Name="IdAreoportDepart" Type="int" />
+    <Property Name="IdAreoportDepartUpdate" Type="bit" />
+    <Property Name="NvolDepart" Type="nvarchar" MaxLength="100" />
+    <Property Name="NvolDepartUpdate" Type="bit" />
+    <Property Name="DateDepart" Type="date" />
+    <Property Name="DateDepartUpdate" Type="bit" />
+    <Property Name="HeureDepart" Type="time" Precision="7" />
+    <Property Name="HeureDepartUpdate" Type="bit" />
+    <Property Name="IdHotel" Type="int" />
+    <Property Name="IdHotelUpdate" Type="int" />
+    <Property Name="IdAccompagnateur" Type="int" />
+    <Property Name="NonOfficiel" Type="bit" />
+    <Property Name="IdVehicule" Type="int" />
+    <Property Name="IdVehiculeArrivee" Type="int" />
+    <Property Name="IdVehiculeDepart" Type="int" />
+    <Property Name="IdVehiculeAutre" Type="int" />
+    <Property Name="IdCongre" Type="int" />
+    <Property Name="motPasse" Type="nvarchar" MaxLength="100" />
+    <Property Name="IdParent" Type="int" />
+    <Property Name="email" Type="nvarchar" MaxLength="100" />
+    <Property Name="photoUrl" Type="nvarchar" MaxLength="500" />
+    <Property Name="IdTitre" Type="int" />
+    <Property Name="status" Type="int" />
+    <Property Name="CreateBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateCreation" Type="date" />
+    <Property Name="UpdateBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateUpdate" Type="date" />
+    <Property Name="deletedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="deletedOn" Type="date" />
+  </EntityType>
+  <EntityType Name="ParticipantTraces">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idParticipantTraces" Type="int" />
+    <Property Name="IdDelegation" Type="int" />
+    <Property Name="PaysOrigine" Type="nvarchar" MaxLength="100" />
+    <Property Name="nom" Type="nvarchar" MaxLength="100" />
+    <Property Name="nomUpdate" Type="bit" />
+    <Property Name="prenom" Type="nvarchar" MaxLength="100" />
+    <Property Name="prenomUpdate" Type="bit" />
+    <Property Name="tel" Type="nvarchar" MaxLength="100" />
+    <Property Name="Titre" Type="nvarchar" MaxLength="100" />
+    <Property Name="TitreUpdate" Type="bit" />
+    <Property Name="NPassportDelegue" Type="nvarchar" MaxLength="100" />
+    <Property Name="NvolArrivee" Type="nvarchar" MaxLength="100" />
+    <Property Name="NvolArriveeUpdate" Type="bit" />
+    <Property Name="DateArrivee" Type="date" />
+    <Property Name="DateArriveeUpdate" Type="bit" />
+    <Property Name="HeureArrivee" Type="time" Precision="7" />
+    <Property Name="HeureArriveeUpdate" Type="bit" />
+    <Property Name="IdAreoportArrivee" Type="int" />
+    <Property Name="IdAreoportArriveeUpdate" Type="bit" />
+    <Property Name="PaysDestination" Type="nvarchar" MaxLength="100" />
+    <Property Name="IdAreoportDepart" Type="int" />
+    <Property Name="IdAreoportDepartUpdate" Type="bit" />
+    <Property Name="NvolDepart" Type="nvarchar" MaxLength="100" />
+    <Property Name="NvolDepartUpdate" Type="bit" />
+    <Property Name="DateDepart" Type="date" />
+    <Property Name="DateDepartUpdate" Type="bit" />
+    <Property Name="HeureDepart" Type="time" Precision="7" />
+    <Property Name="HeureDepartUpdate" Type="bit" />
+    <Property Name="IdHotel" Type="int" />
+    <Property Name="IdHotelUpdate" Type="int" />
+    <Property Name="IdAccompagnateur" Type="int" />
+    <Property Name="NonOfficiel" Type="bit" />
+    <Property Name="IdVehicule" Type="int" />
+    <Property Name="IdVehiculeArrivee" Type="int" />
+    <Property Name="IdVehiculeDepart" Type="int" />
+    <Property Name="IdVehiculeAutre" Type="int" />
+    <Property Name="IdCongre" Type="int" />
+    <Property Name="motPasse" Type="nvarchar" MaxLength="100" />
+    <Property Name="IdParent" Type="int" />
+    <Property Name="email" Type="nvarchar" MaxLength="100" />
+    <Property Name="photoUrl" Type="nvarchar" MaxLength="500" />
+    <Property Name="IdTitre" Type="int" />
+    <Property Name="status" Type="int" />
+    <Property Name="CreateBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateCreation" Type="date" />
+    <Property Name="UpdateBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateUpdate" Type="date" />
+  </EntityType>
+  <EntityType Name="pays">
+    <Key>
+      <PropertyRef Name="id_pays" />
+    </Key>
+    <Property Name="id_pays" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="code_pays" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="fr" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="en" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ar" Type="nvarchar" MaxLength="50" />
+    <Property Name="tele" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="pays2">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tele" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NomFR" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="RolesUsers">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Titres">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Titre" Type="nvarchar" MaxLength="250" />
+    <Property Name="Details" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="login" Type="nvarchar" MaxLength="100" />
+    <Property Name="mdp" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Vehicule">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="matricule" Type="nvarchar" MaxLength="50" />
+    <Property Name="description" Type="nvarchar" MaxLength="50" />
+    <Property Name="marque" Type="nvarchar" MaxLength="50" />
+    <Property Name="modele" Type="nvarchar" MaxLength="50" />
+    <Property Name="IdChauffeur" Type="int" />
+    <Property Name="Type" Type="nvarchar" MaxLength="50" />
+    <Property Name="matriculeType" Type="nvarchar" MaxLength="105" StoreGeneratedPattern="Computed" />
+    <Property Name="cin" Type="nvarchar" MaxLength="50" />
+    <Property Name="nom" Type="nvarchar" MaxLength="50" />
+    <Property Name="prenom" Type="nvarchar" MaxLength="50" />
+    <Property Name="tel" Type="nvarchar" MaxLength="50" />
+    <Property Name="nomPrenomTel" Type="nvarchar" MaxLength="163" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <Association Name="FK__CongreOrg__idMis__398D8EEE">
+    <End Role="Mission" Type="Self.Mission" Multiplicity="0..1" />
+    <End Role="CongreOrganisateur" Type="Self.CongreOrganisateur" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mission">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CongreOrganisateur">
+        <PropertyRef Name="idMission" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Congre_Organisme">
+    <End Role="Organisme" Type="Self.Organisme" Multiplicity="0..1" />
+    <End Role="Congre" Type="Self.Congre" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Organisme">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Congre">
+        <PropertyRef Name="organismeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CongreAeroport_Aeroport">
+    <End Role="Aeroport" Type="Self.Aeroport" Multiplicity="0..1" />
+    <End Role="CongreAeroport" Type="Self.CongreAeroport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Aeroport">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CongreAeroport">
+        <PropertyRef Name="idAeroport" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CongreAeroport_Congre">
+    <End Role="Congre" Type="Self.Congre" Multiplicity="0..1" />
+    <End Role="CongreAeroport" Type="Self.CongreAeroport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Congre">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CongreAeroport">
+        <PropertyRef Name="idCongre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CongreHotel_Congre">
+    <End Role="Congre" Type="Self.Congre" Multiplicity="0..1" />
+    <End Role="CongreHotel" Type="Self.CongreHotel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Congre">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CongreHotel">
+        <PropertyRef Name="idCongre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CongreHotel_Hotel">
+    <End Role="Hotel" Type="Self.Hotel" Multiplicity="0..1" />
+    <End Role="CongreHotel" Type="Self.CongreHotel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hotel">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CongreHotel">
+        <PropertyRef Name="idHotel" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CongreOrganisateur_Congre">
+    <End Role="Congre" Type="Self.Congre" Multiplicity="0..1" />
+    <End Role="CongreOrganisateur" Type="Self.CongreOrganisateur" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Congre">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CongreOrganisateur">
+        <PropertyRef Name="idCongre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CongreOrganisateur_Mission">
+    <End Role="Mission" Type="Self.Mission" Multiplicity="0..1" />
+    <End Role="CongreOrganisateur" Type="Self.CongreOrganisateur" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mission">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CongreOrganisateur">
+        <PropertyRef Name="idMission" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CongreOrganisateur_Organisateur">
+    <End Role="Organisateur" Type="Self.Organisateur" Multiplicity="0..1" />
+    <End Role="CongreOrganisateur" Type="Self.CongreOrganisateur" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Organisateur">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CongreOrganisateur">
+        <PropertyRef Name="idOrganisateur" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Document_Congre">
+    <End Role="Congre" Type="Self.Congre" Multiplicity="0..1" />
+    <End Role="Document" Type="Self.Document" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Congre">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Document">
+        <PropertyRef Name="idCongre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_idParticipant">
+    <End Role="Participant" Type="Self.Participant" Multiplicity="0..1" />
+    <End Role="Document" Type="Self.Document" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Participant">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Document">
+        <PropertyRef Name="idParticipant" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrganisateurAeroport_Aeroport">
+    <End Role="Aeroport" Type="Self.Aeroport" Multiplicity="0..1" />
+    <End Role="OrganisateurAeroport" Type="Self.OrganisateurAeroport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Aeroport">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="OrganisateurAeroport">
+        <PropertyRef Name="IdAeroport" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrganisateurAeroport_OrganisateurAeroport">
+    <End Role="Organisateur" Type="Self.Organisateur" Multiplicity="0..1" />
+    <End Role="OrganisateurAeroport" Type="Self.OrganisateurAeroport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Organisateur">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="OrganisateurAeroport">
+        <PropertyRef Name="IdOrganisateur" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrganisateurHotel_Hotel">
+    <End Role="Hotel" Type="Self.Hotel" Multiplicity="0..1" />
+    <End Role="OrganisateurHotel" Type="Self.OrganisateurHotel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hotel">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="OrganisateurHotel">
+        <PropertyRef Name="IdHotel" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrganisateurHotel_OrganisateurHotel">
+    <End Role="Organisateur" Type="Self.Organisateur" Multiplicity="0..1" />
+    <End Role="OrganisateurHotel" Type="Self.OrganisateurHotel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Organisateur">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="OrganisateurHotel">
+        <PropertyRef Name="IdOrganisateur" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Aeroport">
+    <End Role="Aeroport" Type="Self.Aeroport" Multiplicity="0..1" />
+    <End Role="Participant" Type="Self.Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Aeroport">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Participant">
+        <PropertyRef Name="IdAreoportArrivee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Aeroport1">
+    <End Role="Aeroport" Type="Self.Aeroport" Multiplicity="0..1" />
+    <End Role="Participant" Type="Self.Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Aeroport">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Participant">
+        <PropertyRef Name="IdAreoportDepart" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Congre">
+    <End Role="Congre" Type="Self.Congre" Multiplicity="0..1" />
+    <End Role="Participant" Type="Self.Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Congre">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Participant">
+        <PropertyRef Name="IdCongre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Delegations">
+    <End Role="Delegations" Type="Self.Delegations" Multiplicity="0..1" />
+    <End Role="Participant" Type="Self.Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Delegations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Participant">
+        <PropertyRef Name="IdDelegation" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Hotel">
+    <End Role="Hotel" Type="Self.Hotel" Multiplicity="0..1" />
+    <End Role="Participant" Type="Self.Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hotel">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Participant">
+        <PropertyRef Name="IdHotel" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Organisateur">
+    <End Role="Organisateur" Type="Self.Organisateur" Multiplicity="0..1" />
+    <End Role="Participant" Type="Self.Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Organisateur">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Participant">
+        <PropertyRef Name="IdAccompagnateur" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Participant">
+    <End Role="Participant" Type="Self.Participant" Multiplicity="1" />
+    <End Role="Participant1" Type="Self.Participant" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Participant">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Participant1">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Participant1">
+    <End Role="Participant" Type="Self.Participant" Multiplicity="0..1" />
+    <End Role="Participant1" Type="Self.Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Participant">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Participant1">
+        <PropertyRef Name="IdParent" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Titres">
+    <End Role="Titres" Type="Self.Titres" Multiplicity="0..1" />
+    <End Role="Participant" Type="Self.Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Titres">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Participant">
+        <PropertyRef Name="IdTitre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Vehicule">
+    <End Role="Vehicule" Type="Self.Vehicule" Multiplicity="0..1" />
+    <End Role="Participant" Type="Self.Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicule">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Participant">
+        <PropertyRef Name="IdVehicule" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Vehicule_arrivee">
+    <End Role="Vehicule" Type="Self.Vehicule" Multiplicity="0..1" />
+    <End Role="Participant" Type="Self.Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicule">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Participant">
+        <PropertyRef Name="IdVehiculeArrivee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Vehicule_autre">
+    <End Role="Vehicule" Type="Self.Vehicule" Multiplicity="0..1" />
+    <End Role="Participant" Type="Self.Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicule">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Participant">
+        <PropertyRef Name="IdVehiculeAutre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Vehicule_depart">
+    <End Role="Vehicule" Type="Self.Vehicule" Multiplicity="0..1" />
+    <End Role="Participant" Type="Self.Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicule">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Participant">
+        <PropertyRef Name="IdVehiculeDepart" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_Aeroport">
+    <End Role="Aeroport" Type="Self.Aeroport" Multiplicity="0..1" />
+    <End Role="ParticipantTraces" Type="Self.ParticipantTraces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Aeroport">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces">
+        <PropertyRef Name="IdAreoportArrivee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_Aeroport1">
+    <End Role="Aeroport" Type="Self.Aeroport" Multiplicity="0..1" />
+    <End Role="ParticipantTraces" Type="Self.ParticipantTraces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Aeroport">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces">
+        <PropertyRef Name="IdAreoportDepart" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_Congre">
+    <End Role="Congre" Type="Self.Congre" Multiplicity="0..1" />
+    <End Role="ParticipantTraces" Type="Self.ParticipantTraces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Congre">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces">
+        <PropertyRef Name="IdCongre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_Delegations">
+    <End Role="Delegations" Type="Self.Delegations" Multiplicity="0..1" />
+    <End Role="ParticipantTraces" Type="Self.ParticipantTraces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Delegations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces">
+        <PropertyRef Name="IdDelegation" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_Hotel">
+    <End Role="Hotel" Type="Self.Hotel" Multiplicity="0..1" />
+    <End Role="ParticipantTraces" Type="Self.ParticipantTraces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hotel">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces">
+        <PropertyRef Name="IdHotel" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_Organisateur">
+    <End Role="Organisateur" Type="Self.Organisateur" Multiplicity="0..1" />
+    <End Role="ParticipantTraces" Type="Self.ParticipantTraces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Organisateur">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces">
+        <PropertyRef Name="IdAccompagnateur" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_ParticipantTraces">
+    <End Role="ParticipantTraces" Type="Self.ParticipantTraces" Multiplicity="1" />
+    <End Role="ParticipantTraces1" Type="Self.ParticipantTraces" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="ParticipantTraces">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces1">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_ParticipantTraces1">
+    <End Role="ParticipantTraces" Type="Self.ParticipantTraces" Multiplicity="0..1" />
+    <End Role="ParticipantTraces1" Type="Self.ParticipantTraces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ParticipantTraces">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces1">
+        <PropertyRef Name="IdParent" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_Titres">
+    <End Role="Titres" Type="Self.Titres" Multiplicity="0..1" />
+    <End Role="ParticipantTraces" Type="Self.ParticipantTraces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Titres">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces">
+        <PropertyRef Name="IdTitre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_Vehicule">
+    <End Role="Vehicule" Type="Self.Vehicule" Multiplicity="0..1" />
+    <End Role="ParticipantTraces" Type="Self.ParticipantTraces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicule">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces">
+        <PropertyRef Name="IdVehicule" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_Vehicule_arrivee">
+    <End Role="Vehicule" Type="Self.Vehicule" Multiplicity="0..1" />
+    <End Role="ParticipantTraces" Type="Self.ParticipantTraces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicule">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces">
+        <PropertyRef Name="IdVehiculeArrivee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_Vehicule_autre">
+    <End Role="Vehicule" Type="Self.Vehicule" Multiplicity="0..1" />
+    <End Role="ParticipantTraces" Type="Self.ParticipantTraces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicule">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces">
+        <PropertyRef Name="IdVehiculeAutre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_Vehicule_depart">
+    <End Role="Vehicule" Type="Self.Vehicule" Multiplicity="0..1" />
+    <End Role="ParticipantTraces" Type="Self.ParticipantTraces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicule">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces">
+        <PropertyRef Name="IdVehiculeDepart" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolesUsers_Roles">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+    <End Role="RolesUsers" Type="Self.RolesUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RolesUsers">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolesUsers_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="RolesUsers" Type="Self.RolesUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="RolesUsers">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vehicule_Organisateur">
+    <End Role="Organisateur" Type="Self.Organisateur" Multiplicity="0..1" />
+    <End Role="Vehicule" Type="Self.Vehicule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Organisateur">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Vehicule">
+        <PropertyRef Name="IdChauffeur" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="UpdateParticipantTraces" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="CongresModelStoreContainer">
+    <EntitySet Name="Aeroport" EntityType="Self.Aeroport" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Congre" EntityType="Self.Congre" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CongreAeroport" EntityType="Self.CongreAeroport" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CongreHotel" EntityType="Self.CongreHotel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CongreOrganisateur" EntityType="Self.CongreOrganisateur" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Delegations" EntityType="Self.Delegations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Document" EntityType="Self.Document" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Entite" EntityType="Self.Entite" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Hotel" EntityType="Self.Hotel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Mission" EntityType="Self.Mission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Organisateur" EntityType="Self.Organisateur" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrganisateurAeroport" EntityType="Self.OrganisateurAeroport" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrganisateurHotel" EntityType="Self.OrganisateurHotel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Organisme" EntityType="Self.Organisme" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Participant" EntityType="Self.Participant" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ParticipantTraces" EntityType="Self.ParticipantTraces" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pays" EntityType="Self.pays" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pays2" EntityType="Self.pays2" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RolesUsers" EntityType="Self.RolesUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Titres" EntityType="Self.Titres" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Vehicule" EntityType="Self.Vehicule" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__CongreOrg__idMis__398D8EEE" Association="Self.FK__CongreOrg__idMis__398D8EEE">
+      <End Role="Mission" EntitySet="Mission" />
+      <End Role="CongreOrganisateur" EntitySet="CongreOrganisateur" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Congre_Organisme" Association="Self.FK_Congre_Organisme">
+      <End Role="Organisme" EntitySet="Organisme" />
+      <End Role="Congre" EntitySet="Congre" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CongreAeroport_Aeroport" Association="Self.FK_CongreAeroport_Aeroport">
+      <End Role="Aeroport" EntitySet="Aeroport" />
+      <End Role="CongreAeroport" EntitySet="CongreAeroport" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CongreAeroport_Congre" Association="Self.FK_CongreAeroport_Congre">
+      <End Role="Congre" EntitySet="Congre" />
+      <End Role="CongreAeroport" EntitySet="CongreAeroport" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CongreHotel_Congre" Association="Self.FK_CongreHotel_Congre">
+      <End Role="Congre" EntitySet="Congre" />
+      <End Role="CongreHotel" EntitySet="CongreHotel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CongreHotel_Hotel" Association="Self.FK_CongreHotel_Hotel">
+      <End Role="Hotel" EntitySet="Hotel" />
+      <End Role="CongreHotel" EntitySet="CongreHotel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CongreOrganisateur_Congre" Association="Self.FK_CongreOrganisateur_Congre">
+      <End Role="Congre" EntitySet="Congre" />
+      <End Role="CongreOrganisateur" EntitySet="CongreOrganisateur" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CongreOrganisateur_Mission" Association="Self.FK_CongreOrganisateur_Mission">
+      <End Role="Mission" EntitySet="Mission" />
+      <End Role="CongreOrganisateur" EntitySet="CongreOrganisateur" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CongreOrganisateur_Organisateur" Association="Self.FK_CongreOrganisateur_Organisateur">
+      <End Role="Organisateur" EntitySet="Organisateur" />
+      <End Role="CongreOrganisateur" EntitySet="CongreOrganisateur" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Document_Congre" Association="Self.FK_Document_Congre">
+      <End Role="Congre" EntitySet="Congre" />
+      <End Role="Document" EntitySet="Document" />
+    </AssociationSet>
+    <AssociationSet Name="FK_idParticipant" Association="Self.FK_idParticipant">
+      <End Role="Participant" EntitySet="Participant" />
+      <End Role="Document" EntitySet="Document" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrganisateurAeroport_Aeroport" Association="Self.FK_OrganisateurAeroport_Aeroport">
+      <End Role="Aeroport" EntitySet="Aeroport" />
+      <End Role="OrganisateurAeroport" EntitySet="OrganisateurAeroport" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrganisateurAeroport_OrganisateurAeroport" Association="Self.FK_OrganisateurAeroport_OrganisateurAeroport">
+      <End Role="Organisateur" EntitySet="Organisateur" />
+      <End Role="OrganisateurAeroport" EntitySet="OrganisateurAeroport" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrganisateurHotel_Hotel" Association="Self.FK_OrganisateurHotel_Hotel">
+      <End Role="Hotel" EntitySet="Hotel" />
+      <End Role="OrganisateurHotel" EntitySet="OrganisateurHotel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrganisateurHotel_OrganisateurHotel" Association="Self.FK_OrganisateurHotel_OrganisateurHotel">
+      <End Role="Organisateur" EntitySet="Organisateur" />
+      <End Role="OrganisateurHotel" EntitySet="OrganisateurHotel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Aeroport" Association="Self.FK_Participant_Aeroport">
+      <End Role="Aeroport" EntitySet="Aeroport" />
+      <End Role="Participant" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Aeroport1" Association="Self.FK_Participant_Aeroport1">
+      <End Role="Aeroport" EntitySet="Aeroport" />
+      <End Role="Participant" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Congre" Association="Self.FK_Participant_Congre">
+      <End Role="Congre" EntitySet="Congre" />
+      <End Role="Participant" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Delegations" Association="Self.FK_Participant_Delegations">
+      <End Role="Delegations" EntitySet="Delegations" />
+      <End Role="Participant" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Hotel" Association="Self.FK_Participant_Hotel">
+      <End Role="Hotel" EntitySet="Hotel" />
+      <End Role="Participant" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Organisateur" Association="Self.FK_Participant_Organisateur">
+      <End Role="Organisateur" EntitySet="Organisateur" />
+      <End Role="Participant" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Participant" Association="Self.FK_Participant_Participant">
+      <End Role="Participant" EntitySet="Participant" />
+      <End Role="Participant1" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Participant1" Association="Self.FK_Participant_Participant1">
+      <End Role="Participant" EntitySet="Participant" />
+      <End Role="Participant1" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Titres" Association="Self.FK_Participant_Titres">
+      <End Role="Titres" EntitySet="Titres" />
+      <End Role="Participant" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Vehicule" Association="Self.FK_Participant_Vehicule">
+      <End Role="Vehicule" EntitySet="Vehicule" />
+      <End Role="Participant" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Vehicule_arrivee" Association="Self.FK_Participant_Vehicule_arrivee">
+      <End Role="Vehicule" EntitySet="Vehicule" />
+      <End Role="Participant" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Vehicule_autre" Association="Self.FK_Participant_Vehicule_autre">
+      <End Role="Vehicule" EntitySet="Vehicule" />
+      <End Role="Participant" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Vehicule_depart" Association="Self.FK_Participant_Vehicule_depart">
+      <End Role="Vehicule" EntitySet="Vehicule" />
+      <End Role="Participant" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_Aeroport" Association="Self.FK_ParticipantTraces_Aeroport">
+      <End Role="Aeroport" EntitySet="Aeroport" />
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_Aeroport1" Association="Self.FK_ParticipantTraces_Aeroport1">
+      <End Role="Aeroport" EntitySet="Aeroport" />
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_Congre" Association="Self.FK_ParticipantTraces_Congre">
+      <End Role="Congre" EntitySet="Congre" />
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_Delegations" Association="Self.FK_ParticipantTraces_Delegations">
+      <End Role="Delegations" EntitySet="Delegations" />
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_Hotel" Association="Self.FK_ParticipantTraces_Hotel">
+      <End Role="Hotel" EntitySet="Hotel" />
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_Organisateur" Association="Self.FK_ParticipantTraces_Organisateur">
+      <End Role="Organisateur" EntitySet="Organisateur" />
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_ParticipantTraces" Association="Self.FK_ParticipantTraces_ParticipantTraces">
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+      <End Role="ParticipantTraces1" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_ParticipantTraces1" Association="Self.FK_ParticipantTraces_ParticipantTraces1">
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+      <End Role="ParticipantTraces1" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_Titres" Association="Self.FK_ParticipantTraces_Titres">
+      <End Role="Titres" EntitySet="Titres" />
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_Vehicule" Association="Self.FK_ParticipantTraces_Vehicule">
+      <End Role="Vehicule" EntitySet="Vehicule" />
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_Vehicule_arrivee" Association="Self.FK_ParticipantTraces_Vehicule_arrivee">
+      <End Role="Vehicule" EntitySet="Vehicule" />
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_Vehicule_autre" Association="Self.FK_ParticipantTraces_Vehicule_autre">
+      <End Role="Vehicule" EntitySet="Vehicule" />
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_Vehicule_depart" Association="Self.FK_ParticipantTraces_Vehicule_depart">
+      <End Role="Vehicule" EntitySet="Vehicule" />
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolesUsers_Roles" Association="Self.FK_RolesUsers_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="RolesUsers" EntitySet="RolesUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolesUsers_Users" Association="Self.FK_RolesUsers_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="RolesUsers" EntitySet="RolesUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vehicule_Organisateur" Association="Self.FK_Vehicule_Organisateur">
+      <End Role="Organisateur" EntitySet="Organisateur" />
+      <End Role="Vehicule" EntitySet="Vehicule" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

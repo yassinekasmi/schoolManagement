@@ -1,0 +1,312 @@
+﻿.page-header .page-header-menu .hor-menu {
+    margin: 0 -17px 0 0;
+    margin: 0;
+    float: left;
+    margin-left: -50px;
+}
+
+    .page-header .page-header-menu .hor-menu .navbar-nav > li > a,
+    .page-header .page-header-menu .hor-menu .navbar-nav > li .dropdown-menu li > a {
+        font-size: 15px;
+    }
+
+    .page-header .page-header-menu .hor-menu .navbar-nav > li > a {
+        font-size: 19px;
+        padding-top: 23px;
+    }
+    .page-header .page-header-menu .hor-menu .navbar-nav > li > a {
+        padding: 16px 43px 15px 18px !important;
+    }
+        .modal-footer {
+            text-align: right;
+        }
+.arabe::before {
+    content: url('../Images/Arabe.png'); 
+}
+
+​
+
+.table-bordered > tbody > tr > th {
+    text-align: left;
+}
+
+label {
+    margin-top: 10px;
+}
+.btn {
+    padding: 7px 24px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.table.table-bordered thead > tr > th {
+    text-align: left;
+}
+
+.page-header .page-header-menu .hor-menu .navbar-nav > li .dropdown-menu {
+    text-align: left;
+}
+
+.green.btn {
+    background-color: #4DB3A5;
+    /*    background-color: #37bfae;*/
+}
+
+ .green.btn:hover {
+   background-color: #37BF96;
+}
+
+.font-green-sharp {
+    color: #37bfae;
+}
+
+.fa.fa-gears {
+    color: #37bfae;
+}
+
+.fa.fa-calendar {
+    color: #C5CCE9;
+}
+
+.nav-tabs > li {
+    float: left;
+    margin-bottom: -1px;
+}
+
+.nav-tabs, .nav-pills {
+    margin-bottom: 10px;
+    direction: rtl;
+}
+
+.btn-group > .btn:first-child {
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+    float: left;
+}
+
+.datepicker.dropdown-menu {
+    box-shadow: 5px 5px rgb(102 102 102 / 10%);
+    border: 1px solid #efefef;
+    width: fit-content;
+}
+
+.page-header .page-header-top .page-logo {
+    float: left;
+}
+
+.page-header .page-header-top .top-menu .navbar-nav > li.dropdown-user .dropdown-toggle > img {
+    float: left;
+}
+
+.unsetWidth {
+    width: unset;
+}
+
+.page-header {
+    height: 162px;
+}
+
+    .page-header .page-header-top {
+        height: 100px;
+    }
+
+        .page-header .page-header-top .top-menu .navbar-nav > li.dropdown-user .dropdown-toggle > .username {
+            font-size: 19px;
+            margin-top: 13px;
+            padding-right: 80px;
+        }
+
+    .page-header .page-header-menu {
+        height: 58px;
+    }
+
+.container {
+    width: 99%;
+}
+
+.page-header .page-header-menu .hor-menu .navbar-nav > li .dropdown-menu li > a {
+    font-size: 15px;
+}
+
+body {
+    font-size: 14px;
+}
+
+.portlet.light > .portlet-title > .caption > i {
+    font-size: 19px;
+}
+
+.portlet.light > .portlet-title > .caption > .caption-subject {
+    font-size: 19px;
+}
+
+.btn-sm, .btn-xs {
+    font-size: 15px;
+}
+
+.btn-sm > [class^="glyphicon-"], .btn-sm > [class*=" glyphicon-"], .btn-sm > i {
+        font-size: 16px;
+    }
+
+label {
+    font-size: 17.4px;
+}
+
+.modal-title {
+    font-size: 18.5px;
+}
+
+.login .content .form-title {
+    margin-bottom: 37px;
+}
+
+.login .content h3 {
+    font-size: 30px;
+}
+
+.login .content {
+    width: 443px;
+}
+
+    .login .content .form-title {
+        margin-bottom: 48px;
+    }
+
+    .login .content .form-control {
+        height: 64px;
+        font-size: 18px;
+    }
+/*if you want stop change th title devider color*/
+.deviderTitle {
+    color: #67809F;
+}
+
+.modal.in .modal-dialog {
+    /* width: fit-content; */
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+ 
+input[type=date] {
+    line-height: 21px;
+    width: 100%;
+}
+
+.page-header .page-header-menu .hor-menu .navbar-nav > li > a {
+    padding-top: 16px;
+    padding-bottom: 19px;
+}
+
+.portlet {
+    border: 1px solid lightgrey;
+}
+
+.label {
+    font-size: 14px;
+    color: black;
+}
+
+.portlet.light .portlet-body {
+    padding-top: 0px;
+}
+
+.borderGrey {
+    border: 1px solid #ddd;
+    -webkit-border-radius: 4px;
+    box-shadow: 3PX 3PX 3PX #f2edf2;
+}
+
+.table-bordered > tbody > tr > th {
+    text-align: center;
+}
+
+.a {
+    position: relative;
+    right: -16px;
+    font-size: 18px !important;
+}
+
+ 
+
+.GvOrganisateur td:last-child, .GvSuiviQuestions td:nth-child(9) {
+    vertical-align: middle !important;
+}
+
+.GvOrganisateur tr:last-child td:first-child table td a:hover {
+    padding: 0px 12px 0px 12px;
+    background-color: #ffcc99;
+    border-radius: 8px;
+}
+
+.GvOrganisateur tr:last-child td:first-child table td span {
+    padding: 6px 12px 6px 12px;
+    margin: 0px;
+    background: #337ab7;
+    border-radius: 8px;
+    color: white;
+}
+
+.GvOrganisateur tr:last-child td:first-child table td a {
+    padding: 0px 12px 0px 12px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.GvOrganisateur tr:last-child td:first-child table td {
+    border: 1px solid #dddddd;
+ /*   font-weight: bold;*/
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.GvOrganisateur tr:last-child td:first-child table {
+    border-spacing: 2px 0px !important;
+    border-collapse: separate;
+}
+
+.GvOrganisateur tr:last-child td:first-child table {
+  /* float: left;*/
+    /*padding-right: 8%;*/
+}
+
+    .GvOrganisateur tr:last-child td:first-child table td span {
+        padding: 2px 9px 2px 8px;
+        background: #4DB3A2;
+        border-radius: 4px;
+    }
+
+    .GvOrganisateur tr:last-child td:first-child table td a:hover {
+        padding: 2px 12px 2px 12px;
+        background-color: #ddd;
+        border-radius: 4px;
+    }
+
+    .GvOrganisateur tr:last-child td:first-child table td a {
+        padding: 2px 9px 2px 8px;
+        color: #8ea3b6;
+    }
+
+.portletSerach {
+    border: none;
+    margin-bottom: 0px;
+    background-color: #f9f9f9;
+}
+.page-header .page-header-top .top-menu .navbar-nav > li.dropdown-user > .dropdown-menu {
+    background-color: #eff3f8;
+}
+.enregistrerClass {
+    float: right;
+    margin-top: 13px;
+}
+ 
+.col-md-12 {
+    width: 100%;
+     
+}
+.col-md-12 {
+    padding-left: 11px;
+    padding-right: 11px;
+}

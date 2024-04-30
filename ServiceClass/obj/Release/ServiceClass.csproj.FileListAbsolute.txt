@@ -1,0 +1,11 @@
+I:\MyProjects\Econgres\ServiceClass\bin\Release\ServiceClass.dll
+I:\MyProjects\Econgres\ServiceClass\bin\Release\ServiceClass.pdb
+I:\MyProjects\Econgres\ServiceClass\bin\Release\DataAccess.dll
+I:\MyProjects\Econgres\ServiceClass\bin\Release\EntityFramework.dll
+I:\MyProjects\Econgres\ServiceClass\bin\Release\DataAccess.pdb
+I:\MyProjects\Econgres\ServiceClass\bin\Release\DataAccess.dll.config
+I:\MyProjects\Econgres\ServiceClass\obj\Release\ServiceClass.csproj.AssemblyReference.cache
+I:\MyProjects\Econgres\ServiceClass\obj\Release\ServiceClass.csproj.CoreCompileInputs.cache
+I:\MyProjects\Econgres\ServiceClass\obj\Release\ServiceClass.csproj.CopyComplete
+I:\MyProjects\Econgres\ServiceClass\obj\Release\ServiceClass.dll
+I:\MyProjects\Econgres\ServiceClass\obj\Release\ServiceClass.pdb

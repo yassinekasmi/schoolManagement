@@ -1,0 +1,67 @@
+C:\Users\y.elhaidaoui\source\repos\econgres\ServiceClass\bin\Debug\ServiceClass.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\ServiceClass\bin\Debug\ServiceClass.pdb
+C:\Users\y.elhaidaoui\source\repos\econgres\ServiceClass\bin\Debug\DataAccess.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\ServiceClass\bin\Debug\EntityFramework.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\ServiceClass\bin\Debug\DataAccess.pdb
+C:\Users\y.elhaidaoui\source\repos\econgres\ServiceClass\bin\Debug\DataAccess.dll.config
+C:\Users\y.elhaidaoui\source\repos\econgres\ServiceClass\bin\Debug\EntityFramework.xml
+C:\Users\y.elhaidaoui\source\repos\econgres\ServiceClass\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\ServiceClass\obj\Debug\ServiceClass.csproj.AssemblyReference.cache
+C:\Users\y.elhaidaoui\source\repos\econgres\ServiceClass\obj\Debug\ServiceClass.csproj.CoreCompileInputs.cache
+C:\Users\y.elhaidaoui\source\repos\econgres\ServiceClass\obj\Debug\ServiceClass.csproj.CopyComplete
+C:\Users\y.elhaidaoui\source\repos\econgres\ServiceClass\obj\Debug\ServiceClass.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\ServiceClass\obj\Debug\ServiceClass.pdb
+E:\Repos\Econgres\ServiceClass\bin\Debug\ServiceClass.dll
+E:\Repos\Econgres\ServiceClass\bin\Debug\ServiceClass.pdb
+E:\Repos\Econgres\ServiceClass\bin\Debug\DataAccess.dll
+E:\Repos\Econgres\ServiceClass\bin\Debug\EntityFramework.dll
+E:\Repos\Econgres\ServiceClass\bin\Debug\DataAccess.pdb
+E:\Repos\Econgres\ServiceClass\bin\Debug\DataAccess.dll.config
+E:\Repos\Econgres\ServiceClass\bin\Debug\EntityFramework.xml
+E:\Repos\Econgres\ServiceClass\bin\Debug\fr\EntityFramework.resources.dll
+E:\Repos\Econgres\ServiceClass\obj\Debug\ServiceClass.csproj.AssemblyReference.cache
+E:\Repos\Econgres\ServiceClass\obj\Debug\ServiceClass.csproj.CoreCompileInputs.cache
+E:\Repos\Econgres\ServiceClass\obj\Debug\ServiceClass.csproj.CopyComplete
+E:\Repos\Econgres\ServiceClass\obj\Debug\ServiceClass.dll
+E:\Repos\Econgres\ServiceClass\obj\Debug\ServiceClass.pdb
+I:\MyProjects\Econgres\ServiceClass\bin\Debug\ServiceClass.dll
+I:\MyProjects\Econgres\ServiceClass\bin\Debug\ServiceClass.pdb
+I:\MyProjects\Econgres\ServiceClass\bin\Debug\DataAccess.dll
+I:\MyProjects\Econgres\ServiceClass\bin\Debug\EntityFramework.dll
+I:\MyProjects\Econgres\ServiceClass\bin\Debug\DataAccess.pdb
+I:\MyProjects\Econgres\ServiceClass\bin\Debug\DataAccess.dll.config
+I:\MyProjects\Econgres\ServiceClass\obj\Debug\ServiceClass.csproj.AssemblyReference.cache
+I:\MyProjects\Econgres\ServiceClass\obj\Debug\ServiceClass.csproj.CoreCompileInputs.cache
+I:\MyProjects\Econgres\ServiceClass\obj\Debug\ServiceClass.csproj.CopyComplete
+I:\MyProjects\Econgres\ServiceClass\obj\Debug\ServiceClass.dll
+I:\MyProjects\Econgres\ServiceClass\obj\Debug\ServiceClass.pdb
+E:\Master\S2\Java\Projet\Econgres\Econgres\ServiceClass\bin\Debug\ServiceClass.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\ServiceClass\bin\Debug\ServiceClass.pdb
+E:\Master\S2\Java\Projet\Econgres\Econgres\ServiceClass\bin\Debug\DataAccess.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\ServiceClass\bin\Debug\DataAccess.pdb
+E:\Master\S2\Java\Projet\Econgres\Econgres\ServiceClass\bin\Debug\DataAccess.dll.config
+E:\Master\S2\Java\Projet\Econgres\Econgres\ServiceClass\obj\Debug\ServiceClass.csproj.AssemblyReference.cache
+E:\Master\S2\Java\Projet\Econgres\Econgres\ServiceClass\obj\Debug\ServiceClass.csproj.CoreCompileInputs.cache
+E:\Master\S2\Java\Projet\Econgres\Econgres\ServiceClass\obj\Debug\ServiceClass.csproj.CopyComplete
+E:\Master\S2\Java\Projet\Econgres\Econgres\ServiceClass\obj\Debug\ServiceClass.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\ServiceClass\obj\Debug\ServiceClass.pdb
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\ServiceClass\bin\Debug\ServiceClass.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\ServiceClass\bin\Debug\ServiceClass.pdb
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\ServiceClass\bin\Debug\DataAccess.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\ServiceClass\bin\Debug\DataAccess.pdb
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\ServiceClass\bin\Debug\DataAccess.dll.config
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\ServiceClass\obj\Debug\ServiceClass.csproj.AssemblyReference.cache
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\ServiceClass\obj\Debug\ServiceClass.csproj.CoreCompileInputs.cache
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\ServiceClass\obj\Debug\ServiceClass.csproj.CopyComplete
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\ServiceClass\obj\Debug\ServiceClass.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\ServiceClass\obj\Debug\ServiceClass.pdb
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\ServiceClass\bin\Debug\ServiceClass.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\ServiceClass\bin\Debug\ServiceClass.pdb
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\ServiceClass\bin\Debug\DataAccess.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\ServiceClass\bin\Debug\DataAccess.pdb
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\ServiceClass\bin\Debug\DataAccess.dll.config
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\ServiceClass\obj\Debug\ServiceClass.csproj.AssemblyReference.cache
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\ServiceClass\obj\Debug\ServiceClass.csproj.CoreCompileInputs.cache
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\ServiceClass\obj\Debug\ServiceClass.csproj.CopyComplete
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\ServiceClass\obj\Debug\ServiceClass.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\ServiceClass\obj\Debug\ServiceClass.pdb

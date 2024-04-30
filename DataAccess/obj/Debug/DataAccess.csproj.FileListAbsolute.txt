@@ -1,0 +1,60 @@
+C:\Users\y.elhaidaoui\source\repos\econgres\DataAccess\bin\Debug\DataAccess.dll.config
+C:\Users\y.elhaidaoui\source\repos\econgres\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\y.elhaidaoui\source\repos\econgres\DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\y.elhaidaoui\source\repos\econgres\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\y.elhaidaoui\source\repos\econgres\DataAccess\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\DataAccess\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+C:\Users\y.elhaidaoui\source\repos\econgres\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\y.elhaidaoui\source\repos\econgres\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+C:\Users\y.elhaidaoui\source\repos\econgres\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\DataAccess\obj\Debug\DataAccess.pdb
+E:\Repos\Econgres\DataAccess\bin\Debug\DataAccess.dll.config
+E:\Repos\Econgres\DataAccess\bin\Debug\DataAccess.dll
+E:\Repos\Econgres\DataAccess\bin\Debug\DataAccess.pdb
+E:\Repos\Econgres\DataAccess\bin\Debug\EntityFramework.dll
+E:\Repos\Econgres\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+E:\Repos\Econgres\DataAccess\bin\Debug\EntityFramework.xml
+E:\Repos\Econgres\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+E:\Repos\Econgres\DataAccess\bin\Debug\fr\EntityFramework.resources.dll
+E:\Repos\Econgres\DataAccess\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+E:\Repos\Econgres\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+E:\Repos\Econgres\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+E:\Repos\Econgres\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+E:\Repos\Econgres\DataAccess\obj\Debug\DataAccess.dll
+E:\Repos\Econgres\DataAccess\obj\Debug\DataAccess.pdb
+I:\MyProjects\Econgres\DataAccess\bin\Debug\DataAccess.dll.config
+I:\MyProjects\Econgres\DataAccess\bin\Debug\DataAccess.dll
+I:\MyProjects\Econgres\DataAccess\bin\Debug\DataAccess.pdb
+I:\MyProjects\Econgres\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+I:\MyProjects\Econgres\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+I:\MyProjects\Econgres\DataAccess\obj\Debug\DataAccess.dll
+I:\MyProjects\Econgres\DataAccess\obj\Debug\DataAccess.pdb
+I:\MyProjects\Econgres\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+E:\Master\S2\Java\Projet\Econgres\Econgres\DataAccess\bin\Debug\DataAccess.dll.config
+E:\Master\S2\Java\Projet\Econgres\Econgres\DataAccess\bin\Debug\DataAccess.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\DataAccess\bin\Debug\DataAccess.pdb
+E:\Master\S2\Java\Projet\Econgres\Econgres\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+E:\Master\S2\Java\Projet\Econgres\Econgres\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+E:\Master\S2\Java\Projet\Econgres\Econgres\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+E:\Master\S2\Java\Projet\Econgres\Econgres\DataAccess\obj\Debug\DataAccess.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\DataAccess\obj\Debug\DataAccess.pdb
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\DataAccess\bin\Debug\DataAccess.dll.config
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\DataAccess\bin\Debug\DataAccess.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\DataAccess\bin\Debug\DataAccess.pdb
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\DataAccess\obj\Debug\DataAccess.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\DataAccess\obj\Debug\DataAccess.pdb
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\DataAccess\bin\Debug\DataAccess.dll.config
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\DataAccess\bin\Debug\DataAccess.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\DataAccess\bin\Debug\DataAccess.pdb
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\DataAccess\obj\Debug\DataAccess.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\DataAccess\obj\Debug\DataAccess.pdb

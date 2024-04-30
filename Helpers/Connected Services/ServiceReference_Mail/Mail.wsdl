@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Mail" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://srv-app07.parlement.intra/MailService/Mail.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://srv-app07.parlement.intra/MailService/Mail.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://srv-app07.parlement.intra/MailService/Mail.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PrestigeMailService.WebService" />
+      <xsd:import schemaLocation="http://srv-app07.parlement.intra/MailService/Mail.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/MailService.Data.Models" />
+      <xsd:import schemaLocation="http://srv-app07.parlement.intra/MailService/Mail.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMail_RegisterAlert_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterAlert" />
+  </wsdl:message>
+  <wsdl:message name="IMail_RegisterAlert_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterAlertResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMail_DeleteAlert_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAlert" />
+  </wsdl:message>
+  <wsdl:message name="IMail_DeleteAlert_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAlertResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMail_DeleteAlerRange_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAlerRange" />
+  </wsdl:message>
+  <wsdl:message name="IMail_DeleteAlerRange_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAlerRangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMail_SendByIdTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendByIdTemplate" />
+  </wsdl:message>
+  <wsdl:message name="IMail_SendByIdTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendByIdTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMail_SendByTemplateName_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendByTemplateName" />
+  </wsdl:message>
+  <wsdl:message name="IMail_SendByTemplateName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendByTemplateNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMail_RegisterApplication_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterApplication" />
+  </wsdl:message>
+  <wsdl:message name="IMail_RegisterApplication_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterApplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMail_RegisterTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterTemplate" />
+  </wsdl:message>
+  <wsdl:message name="IMail_RegisterTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMail_TemplateList_InputMessage">
+    <wsdl:part name="parameters" element="tns:TemplateList" />
+  </wsdl:message>
+  <wsdl:message name="IMail_TemplateList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TemplateListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMail_ApplicationList_InputMessage">
+    <wsdl:part name="parameters" element="tns:ApplicationList" />
+  </wsdl:message>
+  <wsdl:message name="IMail_ApplicationList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ApplicationListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMail_ParametersList_InputMessage">
+    <wsdl:part name="parameters" element="tns:ParametersList" />
+  </wsdl:message>
+  <wsdl:message name="IMail_ParametersList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ParametersListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMail">
+    <wsdl:operation name="RegisterAlert">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMail/RegisterAlert" message="tns:IMail_RegisterAlert_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMail/RegisterAlertResponse" message="tns:IMail_RegisterAlert_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAlert">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMail/DeleteAlert" message="tns:IMail_DeleteAlert_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMail/DeleteAlertResponse" message="tns:IMail_DeleteAlert_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAlerRange">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMail/DeleteAlerRange" message="tns:IMail_DeleteAlerRange_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMail/DeleteAlerRangeResponse" message="tns:IMail_DeleteAlerRange_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendByIdTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMail/SendByIdTemplate" message="tns:IMail_SendByIdTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMail/SendByIdTemplateResponse" message="tns:IMail_SendByIdTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendByTemplateName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMail/SendByTemplateName" message="tns:IMail_SendByTemplateName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMail/SendByTemplateNameResponse" message="tns:IMail_SendByTemplateName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterApplication">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMail/RegisterApplication" message="tns:IMail_RegisterApplication_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMail/RegisterApplicationResponse" message="tns:IMail_RegisterApplication_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMail/RegisterTemplate" message="tns:IMail_RegisterTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMail/RegisterTemplateResponse" message="tns:IMail_RegisterTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TemplateList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMail/TemplateList" message="tns:IMail_TemplateList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMail/TemplateListResponse" message="tns:IMail_TemplateList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ApplicationList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMail/ApplicationList" message="tns:IMail_ApplicationList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMail/ApplicationListResponse" message="tns:IMail_ApplicationList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ParametersList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMail/ParametersList" message="tns:IMail_ParametersList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMail/ParametersListResponse" message="tns:IMail_ParametersList_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IMail" type="tns:IMail">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RegisterAlert">
+      <soap:operation soapAction="http://tempuri.org/IMail/RegisterAlert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAlert">
+      <soap:operation soapAction="http://tempuri.org/IMail/DeleteAlert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAlerRange">
+      <soap:operation soapAction="http://tempuri.org/IMail/DeleteAlerRange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendByIdTemplate">
+      <soap:operation soapAction="http://tempuri.org/IMail/SendByIdTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendByTemplateName">
+      <soap:operation soapAction="http://tempuri.org/IMail/SendByTemplateName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterApplication">
+      <soap:operation soapAction="http://tempuri.org/IMail/RegisterApplication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterTemplate">
+      <soap:operation soapAction="http://tempuri.org/IMail/RegisterTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TemplateList">
+      <soap:operation soapAction="http://tempuri.org/IMail/TemplateList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApplicationList">
+      <soap:operation soapAction="http://tempuri.org/IMail/ApplicationList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ParametersList">
+      <soap:operation soapAction="http://tempuri.org/IMail/ParametersList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Mail">
+    <wsdl:port name="BasicHttpBinding_IMail" binding="tns:BasicHttpBinding_IMail">
+      <soap:address location="http://srv-app07.parlement.intra/MailService/Mail.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,1122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CongresModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="CongresEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Aeroport" EntityType="CongresModel.Aeroport" />
+    <EntitySet Name="Congre" EntityType="CongresModel.Congre" />
+    <EntitySet Name="CongreAeroport" EntityType="CongresModel.CongreAeroport" />
+    <EntitySet Name="CongreHotel" EntityType="CongresModel.CongreHotel" />
+    <EntitySet Name="CongreOrganisateur" EntityType="CongresModel.CongreOrganisateur" />
+    <EntitySet Name="Delegations" EntityType="CongresModel.Delegations" />
+    <EntitySet Name="Document" EntityType="CongresModel.Document" />
+    <EntitySet Name="Entite" EntityType="CongresModel.Entite" />
+    <EntitySet Name="Hotel" EntityType="CongresModel.Hotel" />
+    <EntitySet Name="Mission" EntityType="CongresModel.Mission" />
+    <EntitySet Name="Organisateur" EntityType="CongresModel.Organisateur" />
+    <EntitySet Name="Organisme" EntityType="CongresModel.Organisme" />
+    <EntitySet Name="pays" EntityType="CongresModel.pays" />
+    <EntitySet Name="pays2" EntityType="CongresModel.pays2" />
+    <EntitySet Name="Titres" EntityType="CongresModel.Titres" />
+    <EntitySet Name="Users" EntityType="CongresModel.Users" />
+    <AssociationSet Name="FK_CongreAeroport_Aeroport" Association="CongresModel.FK_CongreAeroport_Aeroport">
+      <End Role="Aeroport" EntitySet="Aeroport" />
+      <End Role="CongreAeroport" EntitySet="CongreAeroport" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Congre_Organisme" Association="CongresModel.FK_Congre_Organisme">
+      <End Role="Organisme" EntitySet="Organisme" />
+      <End Role="Congre" EntitySet="Congre" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CongreAeroport_Congre" Association="CongresModel.FK_CongreAeroport_Congre">
+      <End Role="Congre" EntitySet="Congre" />
+      <End Role="CongreAeroport" EntitySet="CongreAeroport" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CongreHotel_Congre" Association="CongresModel.FK_CongreHotel_Congre">
+      <End Role="Congre" EntitySet="Congre" />
+      <End Role="CongreHotel" EntitySet="CongreHotel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CongreOrganisateur_Congre" Association="CongresModel.FK_CongreOrganisateur_Congre">
+      <End Role="Congre" EntitySet="Congre" />
+      <End Role="CongreOrganisateur" EntitySet="CongreOrganisateur" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Document_Congre" Association="CongresModel.FK_Document_Congre">
+      <End Role="Congre" EntitySet="Congre" />
+      <End Role="Document" EntitySet="Document" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CongreHotel_Hotel" Association="CongresModel.FK_CongreHotel_Hotel">
+      <End Role="Hotel" EntitySet="Hotel" />
+      <End Role="CongreHotel" EntitySet="CongreHotel" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CongreOrg__idMis__398D8EEE" Association="CongresModel.FK__CongreOrg__idMis__398D8EEE">
+      <End Role="Mission" EntitySet="Mission" />
+      <End Role="CongreOrganisateur" EntitySet="CongreOrganisateur" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CongreOrganisateur_Mission" Association="CongresModel.FK_CongreOrganisateur_Mission">
+      <End Role="Mission" EntitySet="Mission" />
+      <End Role="CongreOrganisateur" EntitySet="CongreOrganisateur" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CongreOrganisateur_Organisateur" Association="CongresModel.FK_CongreOrganisateur_Organisateur">
+      <End Role="Organisateur" EntitySet="Organisateur" />
+      <End Role="CongreOrganisateur" EntitySet="CongreOrganisateur" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Organisateur_Entite1" Association="CongresModel.FK_Organisateur_Entite1">
+      <End Role="Entite" EntitySet="Entite" />
+      <End Role="Organisateur" EntitySet="Organisateur" />
+    </AssociationSet>
+    <EntitySet Name="OrganisateurAeroport" EntityType="CongresModel.OrganisateurAeroport" />
+    <EntitySet Name="OrganisateurHotel" EntityType="CongresModel.OrganisateurHotel" />
+    <AssociationSet Name="FK_OrganisateurAeroport_Aeroport" Association="CongresModel.FK_OrganisateurAeroport_Aeroport">
+      <End Role="Aeroport" EntitySet="Aeroport" />
+      <End Role="OrganisateurAeroport" EntitySet="OrganisateurAeroport" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrganisateurHotel_Hotel" Association="CongresModel.FK_OrganisateurHotel_Hotel">
+      <End Role="Hotel" EntitySet="Hotel" />
+      <End Role="OrganisateurHotel" EntitySet="OrganisateurHotel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrganisateurAeroport_OrganisateurAeroport" Association="CongresModel.FK_OrganisateurAeroport_OrganisateurAeroport">
+      <End Role="Organisateur" EntitySet="Organisateur" />
+      <End Role="OrganisateurAeroport" EntitySet="OrganisateurAeroport" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrganisateurHotel_OrganisateurHotel" Association="CongresModel.FK_OrganisateurHotel_OrganisateurHotel">
+      <End Role="Organisateur" EntitySet="Organisateur" />
+      <End Role="OrganisateurHotel" EntitySet="OrganisateurHotel" />
+    </AssociationSet>
+    <EntitySet Name="Vehicule" EntityType="CongresModel.Vehicule" />
+    <AssociationSet Name="FK_Vehicule_Organisateur" Association="CongresModel.FK_Vehicule_Organisateur">
+      <End Role="Organisateur" EntitySet="Organisateur" />
+      <End Role="Vehicule" EntitySet="Vehicule" />
+    </AssociationSet>
+    <FunctionImport Name="UpdateParticipantTraces">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="ParticipantTraces" EntityType="CongresModel.ParticipantTraces" />
+    <AssociationSet Name="FK_ParticipantTraces_Aeroport" Association="CongresModel.FK_ParticipantTraces_Aeroport">
+      <End Role="Aeroport" EntitySet="Aeroport" />
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_Aeroport1" Association="CongresModel.FK_ParticipantTraces_Aeroport1">
+      <End Role="Aeroport" EntitySet="Aeroport" />
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_Congre" Association="CongresModel.FK_ParticipantTraces_Congre">
+      <End Role="Congre" EntitySet="Congre" />
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_Delegations" Association="CongresModel.FK_ParticipantTraces_Delegations">
+      <End Role="Delegations" EntitySet="Delegations" />
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_Hotel" Association="CongresModel.FK_ParticipantTraces_Hotel">
+      <End Role="Hotel" EntitySet="Hotel" />
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_Organisateur" Association="CongresModel.FK_ParticipantTraces_Organisateur">
+      <End Role="Organisateur" EntitySet="Organisateur" />
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_ParticipantTraces" Association="CongresModel.FK_ParticipantTraces_ParticipantTraces">
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+      <End Role="ParticipantTraces1" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_ParticipantTraces1" Association="CongresModel.FK_ParticipantTraces_ParticipantTraces1">
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+      <End Role="ParticipantTraces1" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_Titres" Association="CongresModel.FK_ParticipantTraces_Titres">
+      <End Role="Titres" EntitySet="Titres" />
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_Vehicule" Association="CongresModel.FK_ParticipantTraces_Vehicule">
+      <End Role="Vehicule" EntitySet="Vehicule" />
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_Vehicule_arrivee" Association="CongresModel.FK_ParticipantTraces_Vehicule_arrivee">
+      <End Role="Vehicule" EntitySet="Vehicule" />
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_Vehicule_autre" Association="CongresModel.FK_ParticipantTraces_Vehicule_autre">
+      <End Role="Vehicule" EntitySet="Vehicule" />
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParticipantTraces_Vehicule_depart" Association="CongresModel.FK_ParticipantTraces_Vehicule_depart">
+      <End Role="Vehicule" EntitySet="Vehicule" />
+      <End Role="ParticipantTraces" EntitySet="ParticipantTraces" />
+    </AssociationSet>
+    <EntitySet Name="Roles" EntityType="CongresModel.Roles" />
+    <AssociationSet Name="RolesUsers" Association="CongresModel.RolesUsers">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <EntitySet Name="Participant" EntityType="CongresModel.Participant" />
+    <AssociationSet Name="FK_Participant_Aeroport" Association="CongresModel.FK_Participant_Aeroport">
+      <End Role="Aeroport" EntitySet="Aeroport" />
+      <End Role="Participant" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Aeroport1" Association="CongresModel.FK_Participant_Aeroport1">
+      <End Role="Aeroport" EntitySet="Aeroport" />
+      <End Role="Participant" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Congre" Association="CongresModel.FK_Participant_Congre">
+      <End Role="Congre" EntitySet="Congre" />
+      <End Role="Participant" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Delegations" Association="CongresModel.FK_Participant_Delegations">
+      <End Role="Delegations" EntitySet="Delegations" />
+      <End Role="Participant" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_idParticipant" Association="CongresModel.FK_idParticipant">
+      <End Role="Participant" EntitySet="Participant" />
+      <End Role="Document" EntitySet="Document" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Hotel" Association="CongresModel.FK_Participant_Hotel">
+      <End Role="Hotel" EntitySet="Hotel" />
+      <End Role="Participant" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Organisateur" Association="CongresModel.FK_Participant_Organisateur">
+      <End Role="Organisateur" EntitySet="Organisateur" />
+      <End Role="Participant" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Participant" Association="CongresModel.FK_Participant_Participant">
+      <End Role="Participant" EntitySet="Participant" />
+      <End Role="Participant1" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Participant1" Association="CongresModel.FK_Participant_Participant1">
+      <End Role="Participant" EntitySet="Participant" />
+      <End Role="Participant1" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Titres" Association="CongresModel.FK_Participant_Titres">
+      <End Role="Titres" EntitySet="Titres" />
+      <End Role="Participant" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Vehicule" Association="CongresModel.FK_Participant_Vehicule">
+      <End Role="Vehicule" EntitySet="Vehicule" />
+      <End Role="Participant" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Vehicule_arrivee" Association="CongresModel.FK_Participant_Vehicule_arrivee">
+      <End Role="Vehicule" EntitySet="Vehicule" />
+      <End Role="Participant" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Vehicule_autre" Association="CongresModel.FK_Participant_Vehicule_autre">
+      <End Role="Vehicule" EntitySet="Vehicule" />
+      <End Role="Participant" EntitySet="Participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participant_Vehicule_depart" Association="CongresModel.FK_Participant_Vehicule_depart">
+      <End Role="Vehicule" EntitySet="Vehicule" />
+      <End Role="Participant" EntitySet="Participant" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Aeroport">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ville" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="nomArabe" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="nomAnglais" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CongreAeroport" Relationship="CongresModel.FK_CongreAeroport_Aeroport" FromRole="Aeroport" ToRole="CongreAeroport" />
+    <NavigationProperty Name="OrganisateurAeroport" Relationship="CongresModel.FK_OrganisateurAeroport_Aeroport" FromRole="Aeroport" ToRole="OrganisateurAeroport" />
+    <NavigationProperty Name="ParticipantTraces" Relationship="CongresModel.FK_ParticipantTraces_Aeroport" FromRole="Aeroport" ToRole="ParticipantTraces" />
+    <NavigationProperty Name="ParticipantTraces1" Relationship="CongresModel.FK_ParticipantTraces_Aeroport1" FromRole="Aeroport" ToRole="ParticipantTraces" />
+    <NavigationProperty Name="Participant" Relationship="CongresModel.FK_Participant_Aeroport" FromRole="Aeroport" ToRole="Participant" />
+    <NavigationProperty Name="Participant1" Relationship="CongresModel.FK_Participant_Aeroport1" FromRole="Aeroport" ToRole="Participant" />
+  </EntityType>
+  <EntityType Name="Congre">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="titre" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="dateDebut" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="dateFin" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="details" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="organismeId" Type="Int32" />
+    <Property Name="statutcongre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Organisme" Relationship="CongresModel.FK_Congre_Organisme" FromRole="Congre" ToRole="Organisme" />
+    <NavigationProperty Name="CongreAeroport" Relationship="CongresModel.FK_CongreAeroport_Congre" FromRole="Congre" ToRole="CongreAeroport" />
+    <NavigationProperty Name="CongreHotel" Relationship="CongresModel.FK_CongreHotel_Congre" FromRole="Congre" ToRole="CongreHotel" />
+    <NavigationProperty Name="CongreOrganisateur" Relationship="CongresModel.FK_CongreOrganisateur_Congre" FromRole="Congre" ToRole="CongreOrganisateur" />
+    <NavigationProperty Name="Document" Relationship="CongresModel.FK_Document_Congre" FromRole="Congre" ToRole="Document" />
+    <NavigationProperty Name="ParticipantTraces" Relationship="CongresModel.FK_ParticipantTraces_Congre" FromRole="Congre" ToRole="ParticipantTraces" />
+    <NavigationProperty Name="Participant" Relationship="CongresModel.FK_Participant_Congre" FromRole="Congre" ToRole="Participant" />
+  </EntityType>
+  <EntityType Name="CongreAeroport">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idCongre" Type="Int32" />
+    <Property Name="idAeroport" Type="Int32" />
+    <NavigationProperty Name="Aeroport" Relationship="CongresModel.FK_CongreAeroport_Aeroport" FromRole="CongreAeroport" ToRole="Aeroport" />
+    <NavigationProperty Name="Congre" Relationship="CongresModel.FK_CongreAeroport_Congre" FromRole="CongreAeroport" ToRole="Congre" />
+  </EntityType>
+  <EntityType Name="CongreHotel">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idCongre" Type="Int32" />
+    <Property Name="idHotel" Type="Int32" />
+    <NavigationProperty Name="Congre" Relationship="CongresModel.FK_CongreHotel_Congre" FromRole="CongreHotel" ToRole="Congre" />
+    <NavigationProperty Name="Hotel" Relationship="CongresModel.FK_CongreHotel_Hotel" FromRole="CongreHotel" ToRole="Hotel" />
+  </EntityType>
+  <EntityType Name="CongreOrganisateur">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idCongre" Type="Int32" />
+    <Property Name="idOrganisateur" Type="Int32" />
+    <Property Name="idMission" Type="Int32" />
+    <NavigationProperty Name="Congre" Relationship="CongresModel.FK_CongreOrganisateur_Congre" FromRole="CongreOrganisateur" ToRole="Congre" />
+    <NavigationProperty Name="Mission" Relationship="CongresModel.FK__CongreOrg__idMis__398D8EEE" FromRole="CongreOrganisateur" ToRole="Mission" />
+    <NavigationProperty Name="Mission1" Relationship="CongresModel.FK_CongreOrganisateur_Mission" FromRole="CongreOrganisateur" ToRole="Mission" />
+    <NavigationProperty Name="Organisateur" Relationship="CongresModel.FK_CongreOrganisateur_Organisateur" FromRole="CongreOrganisateur" ToRole="Organisateur" />
+  </EntityType>
+  <EntityType Name="Delegations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Delegation" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Details" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ParticipantTraces" Relationship="CongresModel.FK_ParticipantTraces_Delegations" FromRole="Delegations" ToRole="ParticipantTraces" />
+    <NavigationProperty Name="Participant" Relationship="CongresModel.FK_Participant_Delegations" FromRole="Delegations" ToRole="Participant" />
+  </EntityType>
+  <EntityType Name="Document">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="titre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="documentUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="idCongre" Type="Int32" />
+    <Property Name="idParticipant" Type="Int32" />
+    <NavigationProperty Name="Congre" Relationship="CongresModel.FK_Document_Congre" FromRole="Document" ToRole="Congre" />
+    <NavigationProperty Name="Participant" Relationship="CongresModel.FK_idParticipant" FromRole="Document" ToRole="Participant" />
+  </EntityType>
+  <EntityType Name="Entite">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="specialite" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="adresse" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="tel" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Organisateur" Relationship="CongresModel.FK_Organisateur_Entite1" FromRole="Entite" ToRole="Organisateur" />
+  </EntityType>
+  <EntityType Name="Hotel">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="adresse" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="tel" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="siteWeb" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="nomArabe" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="nomAnglais" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CongreHotel" Relationship="CongresModel.FK_CongreHotel_Hotel" FromRole="Hotel" ToRole="CongreHotel" />
+    <NavigationProperty Name="OrganisateurHotel" Relationship="CongresModel.FK_OrganisateurHotel_Hotel" FromRole="Hotel" ToRole="OrganisateurHotel" />
+    <NavigationProperty Name="ParticipantTraces" Relationship="CongresModel.FK_ParticipantTraces_Hotel" FromRole="Hotel" ToRole="ParticipantTraces" />
+    <NavigationProperty Name="Participant" Relationship="CongresModel.FK_Participant_Hotel" FromRole="Hotel" ToRole="Participant" />
+  </EntityType>
+  <EntityType Name="Mission">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="titre" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CongreOrganisateur" Relationship="CongresModel.FK__CongreOrg__idMis__398D8EEE" FromRole="Mission" ToRole="CongreOrganisateur" />
+    <NavigationProperty Name="CongreOrganisateur1" Relationship="CongresModel.FK_CongreOrganisateur_Mission" FromRole="Mission" ToRole="CongreOrganisateur" />
+  </EntityType>
+  <EntityType Name="Organisateur">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="prenom" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tel" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="idEntite" Type="Int32" />
+    <Property Name="photoUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="specialite" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="cin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CongreOrganisateur" Relationship="CongresModel.FK_CongreOrganisateur_Organisateur" FromRole="Organisateur" ToRole="CongreOrganisateur" />
+    <NavigationProperty Name="Entite" Relationship="CongresModel.FK_Organisateur_Entite1" FromRole="Organisateur" ToRole="Entite" />
+    <Property Name="nomPrenomTel" Type="String" MaxLength="163" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="OrganisateurAeroport" Relationship="CongresModel.FK_OrganisateurAeroport_OrganisateurAeroport" FromRole="Organisateur" ToRole="OrganisateurAeroport" />
+    <NavigationProperty Name="OrganisateurHotel" Relationship="CongresModel.FK_OrganisateurHotel_OrganisateurHotel" FromRole="Organisateur" ToRole="OrganisateurHotel" />
+    <NavigationProperty Name="Vehicule" Relationship="CongresModel.FK_Vehicule_Organisateur" FromRole="Organisateur" ToRole="Vehicule" />
+    <NavigationProperty Name="ParticipantTraces" Relationship="CongresModel.FK_ParticipantTraces_Organisateur" FromRole="Organisateur" ToRole="ParticipantTraces" />
+    <NavigationProperty Name="Participant" Relationship="CongresModel.FK_Participant_Organisateur" FromRole="Organisateur" ToRole="Participant" />
+  </EntityType>
+  <EntityType Name="Organisme">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Congre" Relationship="CongresModel.FK_Congre_Organisme" FromRole="Organisme" ToRole="Congre" />
+  </EntityType>
+  <EntityType Name="pays">
+    <Key>
+      <PropertyRef Name="id_pays" />
+    </Key>
+    <Property Name="id_pays" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="code_pays" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="fr" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="en" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tele" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="pays2">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tele" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Titres">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Titre" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Details" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ParticipantTraces" Relationship="CongresModel.FK_ParticipantTraces_Titres" FromRole="Titres" ToRole="ParticipantTraces" />
+    <NavigationProperty Name="Participant" Relationship="CongresModel.FK_Participant_Titres" FromRole="Titres" ToRole="Participant" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="login" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="mdp" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Roles" Relationship="CongresModel.RolesUsers" FromRole="Users" ToRole="Roles" />
+  </EntityType>
+  <Association Name="FK_CongreAeroport_Aeroport">
+    <End Type="CongresModel.Aeroport" Role="Aeroport" Multiplicity="0..1" />
+    <End Type="CongresModel.CongreAeroport" Role="CongreAeroport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Aeroport">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CongreAeroport">
+        <PropertyRef Name="idAeroport" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Congre_Organisme">
+    <End Type="CongresModel.Organisme" Role="Organisme" Multiplicity="0..1" />
+    <End Type="CongresModel.Congre" Role="Congre" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Organisme">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Congre">
+        <PropertyRef Name="organismeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CongreAeroport_Congre">
+    <End Type="CongresModel.Congre" Role="Congre" Multiplicity="0..1" />
+    <End Type="CongresModel.CongreAeroport" Role="CongreAeroport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Congre">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CongreAeroport">
+        <PropertyRef Name="idCongre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CongreHotel_Congre">
+    <End Type="CongresModel.Congre" Role="Congre" Multiplicity="0..1" />
+    <End Type="CongresModel.CongreHotel" Role="CongreHotel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Congre">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CongreHotel">
+        <PropertyRef Name="idCongre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CongreOrganisateur_Congre">
+    <End Type="CongresModel.Congre" Role="Congre" Multiplicity="0..1" />
+    <End Type="CongresModel.CongreOrganisateur" Role="CongreOrganisateur" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Congre">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CongreOrganisateur">
+        <PropertyRef Name="idCongre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Document_Congre">
+    <End Type="CongresModel.Congre" Role="Congre" Multiplicity="0..1" />
+    <End Type="CongresModel.Document" Role="Document" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Congre">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Document">
+        <PropertyRef Name="idCongre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CongreHotel_Hotel">
+    <End Type="CongresModel.Hotel" Role="Hotel" Multiplicity="0..1" />
+    <End Type="CongresModel.CongreHotel" Role="CongreHotel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hotel">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CongreHotel">
+        <PropertyRef Name="idHotel" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CongreOrg__idMis__398D8EEE">
+    <End Type="CongresModel.Mission" Role="Mission" Multiplicity="0..1" />
+    <End Type="CongresModel.CongreOrganisateur" Role="CongreOrganisateur" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mission">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CongreOrganisateur">
+        <PropertyRef Name="idMission" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CongreOrganisateur_Mission">
+    <End Type="CongresModel.Mission" Role="Mission" Multiplicity="0..1" />
+    <End Type="CongresModel.CongreOrganisateur" Role="CongreOrganisateur" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mission">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CongreOrganisateur">
+        <PropertyRef Name="idMission" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CongreOrganisateur_Organisateur">
+    <End Type="CongresModel.Organisateur" Role="Organisateur" Multiplicity="0..1" />
+    <End Type="CongresModel.CongreOrganisateur" Role="CongreOrganisateur" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Organisateur">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CongreOrganisateur">
+        <PropertyRef Name="idOrganisateur" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Organisateur_Entite1">
+    <End Type="CongresModel.Entite" Role="Entite" Multiplicity="0..1" />
+    <End Type="CongresModel.Organisateur" Role="Organisateur" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Entite">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Organisateur">
+        <PropertyRef Name="idEntite" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="OrganisateurAeroport">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdOrganisateur" Type="Int32" />
+    <Property Name="IdAeroport" Type="Int32" />
+    <Property Name="DateJour" Type="DateTime" Precision="0" />
+    <Property Name="HeureD" Type="Time" Precision="7" />
+    <Property Name="HeureF" Type="Time" Precision="7" />
+    <NavigationProperty Name="Aeroport" Relationship="CongresModel.FK_OrganisateurAeroport_Aeroport" FromRole="OrganisateurAeroport" ToRole="Aeroport" />
+    <NavigationProperty Name="Organisateur" Relationship="CongresModel.FK_OrganisateurAeroport_OrganisateurAeroport" FromRole="OrganisateurAeroport" ToRole="Organisateur" />
+  </EntityType>
+  <EntityType Name="OrganisateurHotel">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdOrganisateur" Type="Int32" />
+    <Property Name="IdHotel" Type="Int32" />
+    <Property Name="DateJour" Type="DateTime" Precision="0" />
+    <Property Name="HeureD" Type="Time" Precision="7" />
+    <Property Name="HeureF" Type="Time" Precision="7" />
+    <NavigationProperty Name="Hotel" Relationship="CongresModel.FK_OrganisateurHotel_Hotel" FromRole="OrganisateurHotel" ToRole="Hotel" />
+    <NavigationProperty Name="Organisateur" Relationship="CongresModel.FK_OrganisateurHotel_OrganisateurHotel" FromRole="OrganisateurHotel" ToRole="Organisateur" />
+  </EntityType>
+  <Association Name="FK_OrganisateurAeroport_Aeroport">
+    <End Type="CongresModel.Aeroport" Role="Aeroport" Multiplicity="0..1" />
+    <End Type="CongresModel.OrganisateurAeroport" Role="OrganisateurAeroport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Aeroport">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="OrganisateurAeroport">
+        <PropertyRef Name="IdAeroport" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrganisateurHotel_Hotel">
+    <End Type="CongresModel.Hotel" Role="Hotel" Multiplicity="0..1" />
+    <End Type="CongresModel.OrganisateurHotel" Role="OrganisateurHotel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hotel">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="OrganisateurHotel">
+        <PropertyRef Name="IdHotel" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrganisateurAeroport_OrganisateurAeroport">
+    <End Type="CongresModel.Organisateur" Role="Organisateur" Multiplicity="0..1" />
+    <End Type="CongresModel.OrganisateurAeroport" Role="OrganisateurAeroport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Organisateur">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="OrganisateurAeroport">
+        <PropertyRef Name="IdOrganisateur" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrganisateurHotel_OrganisateurHotel">
+    <End Type="CongresModel.Organisateur" Role="Organisateur" Multiplicity="0..1" />
+    <End Type="CongresModel.OrganisateurHotel" Role="OrganisateurHotel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Organisateur">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="OrganisateurHotel">
+        <PropertyRef Name="IdOrganisateur" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Vehicule">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="matricule" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="marque" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="modele" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IdChauffeur" Type="Int32" />
+    <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="matriculeType" Type="String" MaxLength="105" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="cin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="nom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="prenom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="nomPrenomTel" Type="String" MaxLength="163" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="Organisateur" Relationship="CongresModel.FK_Vehicule_Organisateur" FromRole="Vehicule" ToRole="Organisateur" />
+    <NavigationProperty Name="ParticipantTraces" Relationship="CongresModel.FK_ParticipantTraces_Vehicule" FromRole="Vehicule" ToRole="ParticipantTraces" />
+    <NavigationProperty Name="ParticipantTraces1" Relationship="CongresModel.FK_ParticipantTraces_Vehicule_arrivee" FromRole="Vehicule" ToRole="ParticipantTraces" />
+    <NavigationProperty Name="ParticipantTraces2" Relationship="CongresModel.FK_ParticipantTraces_Vehicule_autre" FromRole="Vehicule" ToRole="ParticipantTraces" />
+    <NavigationProperty Name="ParticipantTraces3" Relationship="CongresModel.FK_ParticipantTraces_Vehicule_depart" FromRole="Vehicule" ToRole="ParticipantTraces" />
+    <NavigationProperty Name="Participant" Relationship="CongresModel.FK_Participant_Vehicule" FromRole="Vehicule" ToRole="Participant" />
+    <NavigationProperty Name="Participant1" Relationship="CongresModel.FK_Participant_Vehicule_arrivee" FromRole="Vehicule" ToRole="Participant" />
+    <NavigationProperty Name="Participant2" Relationship="CongresModel.FK_Participant_Vehicule_autre" FromRole="Vehicule" ToRole="Participant" />
+    <NavigationProperty Name="Participant3" Relationship="CongresModel.FK_Participant_Vehicule_depart" FromRole="Vehicule" ToRole="Participant" />
+  </EntityType>
+  <Association Name="FK_Vehicule_Organisateur">
+    <End Type="CongresModel.Organisateur" Role="Organisateur" Multiplicity="0..1" />
+    <End Type="CongresModel.Vehicule" Role="Vehicule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Organisateur">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Vehicule">
+        <PropertyRef Name="IdChauffeur" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="ParticipantTraces">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idParticipantTraces" Type="Int32" />
+    <Property Name="IdDelegation" Type="Int32" />
+    <Property Name="PaysOrigine" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="nom" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="nomUpdate" Type="Boolean" />
+    <Property Name="prenom" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="prenomUpdate" Type="Boolean" />
+    <Property Name="tel" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Titre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TitreUpdate" Type="Boolean" />
+    <Property Name="NPassportDelegue" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NvolArrivee" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NvolArriveeUpdate" Type="Boolean" />
+    <Property Name="DateArrivee" Type="DateTime" Precision="0" />
+    <Property Name="DateArriveeUpdate" Type="Boolean" />
+    <Property Name="HeureArrivee" Type="Time" Precision="7" />
+    <Property Name="HeureArriveeUpdate" Type="Boolean" />
+    <Property Name="IdAreoportArrivee" Type="Int32" />
+    <Property Name="IdAreoportArriveeUpdate" Type="Boolean" />
+    <Property Name="PaysDestination" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IdAreoportDepart" Type="Int32" />
+    <Property Name="IdAreoportDepartUpdate" Type="Boolean" />
+    <Property Name="NvolDepart" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NvolDepartUpdate" Type="Boolean" />
+    <Property Name="DateDepart" Type="DateTime" Precision="0" />
+    <Property Name="DateDepartUpdate" Type="Boolean" />
+    <Property Name="HeureDepart" Type="Time" Precision="7" />
+    <Property Name="HeureDepartUpdate" Type="Boolean" />
+    <Property Name="IdHotel" Type="Int32" />
+    <Property Name="IdHotelUpdate" Type="Int32" />
+    <Property Name="IdAccompagnateur" Type="Int32" />
+    <Property Name="NonOfficiel" Type="Boolean" />
+    <Property Name="IdVehicule" Type="Int32" />
+    <Property Name="IdVehiculeArrivee" Type="Int32" />
+    <Property Name="IdVehiculeDepart" Type="Int32" />
+    <Property Name="IdVehiculeAutre" Type="Int32" />
+    <Property Name="IdCongre" Type="Int32" />
+    <Property Name="motPasse" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IdParent" Type="Int32" />
+    <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="photoUrl" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IdTitre" Type="Int32" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DateCreation" Type="DateTime" Precision="0" />
+    <Property Name="UpdateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DateUpdate" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Aeroport" Relationship="CongresModel.FK_ParticipantTraces_Aeroport" FromRole="ParticipantTraces" ToRole="Aeroport" />
+    <NavigationProperty Name="Aeroport1" Relationship="CongresModel.FK_ParticipantTraces_Aeroport1" FromRole="ParticipantTraces" ToRole="Aeroport" />
+    <NavigationProperty Name="Congre" Relationship="CongresModel.FK_ParticipantTraces_Congre" FromRole="ParticipantTraces" ToRole="Congre" />
+    <NavigationProperty Name="Delegations" Relationship="CongresModel.FK_ParticipantTraces_Delegations" FromRole="ParticipantTraces" ToRole="Delegations" />
+    <NavigationProperty Name="Hotel" Relationship="CongresModel.FK_ParticipantTraces_Hotel" FromRole="ParticipantTraces" ToRole="Hotel" />
+    <NavigationProperty Name="Organisateur" Relationship="CongresModel.FK_ParticipantTraces_Organisateur" FromRole="ParticipantTraces" ToRole="Organisateur" />
+    <NavigationProperty Name="ParticipantTraces1" Relationship="CongresModel.FK_ParticipantTraces_ParticipantTraces" FromRole="ParticipantTraces" ToRole="ParticipantTraces1" />
+    <NavigationProperty Name="ParticipantTraces2" Relationship="CongresModel.FK_ParticipantTraces_ParticipantTraces" FromRole="ParticipantTraces1" ToRole="ParticipantTraces" />
+    <NavigationProperty Name="ParticipantTraces11" Relationship="CongresModel.FK_ParticipantTraces_ParticipantTraces1" FromRole="ParticipantTraces" ToRole="ParticipantTraces1" />
+    <NavigationProperty Name="ParticipantTraces3" Relationship="CongresModel.FK_ParticipantTraces_ParticipantTraces1" FromRole="ParticipantTraces1" ToRole="ParticipantTraces" />
+    <NavigationProperty Name="Titres" Relationship="CongresModel.FK_ParticipantTraces_Titres" FromRole="ParticipantTraces" ToRole="Titres" />
+    <NavigationProperty Name="Vehicule" Relationship="CongresModel.FK_ParticipantTraces_Vehicule" FromRole="ParticipantTraces" ToRole="Vehicule" />
+    <NavigationProperty Name="Vehicule1" Relationship="CongresModel.FK_ParticipantTraces_Vehicule_arrivee" FromRole="ParticipantTraces" ToRole="Vehicule" />
+    <NavigationProperty Name="Vehicule2" Relationship="CongresModel.FK_ParticipantTraces_Vehicule_autre" FromRole="ParticipantTraces" ToRole="Vehicule" />
+    <NavigationProperty Name="Vehicule3" Relationship="CongresModel.FK_ParticipantTraces_Vehicule_depart" FromRole="ParticipantTraces" ToRole="Vehicule" />
+  </EntityType>
+  <Association Name="FK_ParticipantTraces_Aeroport">
+    <End Type="CongresModel.Aeroport" Role="Aeroport" Multiplicity="0..1" />
+    <End Type="CongresModel.ParticipantTraces" Role="ParticipantTraces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Aeroport">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces">
+        <PropertyRef Name="IdAreoportArrivee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_Aeroport1">
+    <End Type="CongresModel.Aeroport" Role="Aeroport" Multiplicity="0..1" />
+    <End Type="CongresModel.ParticipantTraces" Role="ParticipantTraces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Aeroport">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces">
+        <PropertyRef Name="IdAreoportDepart" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_Congre">
+    <End Type="CongresModel.Congre" Role="Congre" Multiplicity="0..1" />
+    <End Type="CongresModel.ParticipantTraces" Role="ParticipantTraces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Congre">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces">
+        <PropertyRef Name="IdCongre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_Delegations">
+    <End Type="CongresModel.Delegations" Role="Delegations" Multiplicity="0..1" />
+    <End Type="CongresModel.ParticipantTraces" Role="ParticipantTraces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Delegations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces">
+        <PropertyRef Name="IdDelegation" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_Hotel">
+    <End Type="CongresModel.Hotel" Role="Hotel" Multiplicity="0..1" />
+    <End Type="CongresModel.ParticipantTraces" Role="ParticipantTraces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hotel">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces">
+        <PropertyRef Name="IdHotel" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_Organisateur">
+    <End Type="CongresModel.Organisateur" Role="Organisateur" Multiplicity="0..1" />
+    <End Type="CongresModel.ParticipantTraces" Role="ParticipantTraces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Organisateur">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces">
+        <PropertyRef Name="IdAccompagnateur" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_ParticipantTraces">
+    <End Type="CongresModel.ParticipantTraces" Role="ParticipantTraces" Multiplicity="1" />
+    <End Type="CongresModel.ParticipantTraces" Role="ParticipantTraces1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="ParticipantTraces">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces1">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_ParticipantTraces1">
+    <End Type="CongresModel.ParticipantTraces" Role="ParticipantTraces" Multiplicity="0..1" />
+    <End Type="CongresModel.ParticipantTraces" Role="ParticipantTraces1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ParticipantTraces">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces1">
+        <PropertyRef Name="IdParent" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_Titres">
+    <End Type="CongresModel.Titres" Role="Titres" Multiplicity="0..1" />
+    <End Type="CongresModel.ParticipantTraces" Role="ParticipantTraces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Titres">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces">
+        <PropertyRef Name="IdTitre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_Vehicule">
+    <End Type="CongresModel.Vehicule" Role="Vehicule" Multiplicity="0..1" />
+    <End Type="CongresModel.ParticipantTraces" Role="ParticipantTraces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicule">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces">
+        <PropertyRef Name="IdVehicule" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_Vehicule_arrivee">
+    <End Type="CongresModel.Vehicule" Role="Vehicule" Multiplicity="0..1" />
+    <End Type="CongresModel.ParticipantTraces" Role="ParticipantTraces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicule">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces">
+        <PropertyRef Name="IdVehiculeArrivee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_Vehicule_autre">
+    <End Type="CongresModel.Vehicule" Role="Vehicule" Multiplicity="0..1" />
+    <End Type="CongresModel.ParticipantTraces" Role="ParticipantTraces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicule">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces">
+        <PropertyRef Name="IdVehiculeAutre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParticipantTraces_Vehicule_depart">
+    <End Type="CongresModel.Vehicule" Role="Vehicule" Multiplicity="0..1" />
+    <End Type="CongresModel.ParticipantTraces" Role="ParticipantTraces" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicule">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ParticipantTraces">
+        <PropertyRef Name="IdVehiculeDepart" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NomFR" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Users" Relationship="CongresModel.RolesUsers" FromRole="Roles" ToRole="Users" />
+  </EntityType>
+  <Association Name="RolesUsers">
+    <End Type="CongresModel.Roles" Role="Roles" Multiplicity="*" />
+    <End Type="CongresModel.Users" Role="Users" Multiplicity="*" />
+  </Association>
+  <EntityType Name="Participant">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdDelegation" Type="Int32" />
+    <Property Name="PaysOrigine" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="nom" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="nomUpdate" Type="Boolean" />
+    <Property Name="prenom" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="prenomUpdate" Type="Boolean" />
+    <Property Name="tel" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Titre" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="TitreUpdate" Type="Boolean" />
+    <Property Name="NPassportDelegue" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NvolArrivee" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NvolArriveeUpdate" Type="Boolean" />
+    <Property Name="DateArrivee" Type="DateTime" Precision="0" />
+    <Property Name="DateArriveeUpdate" Type="Boolean" />
+    <Property Name="HeureArrivee" Type="Time" Precision="7" />
+    <Property Name="HeureArriveeUpdate" Type="Boolean" />
+    <Property Name="IdAreoportArrivee" Type="Int32" />
+    <Property Name="IdAreoportArriveeUpdate" Type="Boolean" />
+    <Property Name="PaysDestination" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IdAreoportDepart" Type="Int32" />
+    <Property Name="IdAreoportDepartUpdate" Type="Boolean" />
+    <Property Name="NvolDepart" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NvolDepartUpdate" Type="Boolean" />
+    <Property Name="DateDepart" Type="DateTime" Precision="0" />
+    <Property Name="DateDepartUpdate" Type="Boolean" />
+    <Property Name="HeureDepart" Type="Time" Precision="7" />
+    <Property Name="HeureDepartUpdate" Type="Boolean" />
+    <Property Name="IdHotel" Type="Int32" />
+    <Property Name="IdHotelUpdate" Type="Int32" />
+    <Property Name="IdAccompagnateur" Type="Int32" />
+    <Property Name="NonOfficiel" Type="Boolean" />
+    <Property Name="IdVehicule" Type="Int32" />
+    <Property Name="IdVehiculeArrivee" Type="Int32" />
+    <Property Name="IdVehiculeDepart" Type="Int32" />
+    <Property Name="IdVehiculeAutre" Type="Int32" />
+    <Property Name="IdCongre" Type="Int32" />
+    <Property Name="motPasse" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IdParent" Type="Int32" />
+    <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="photoUrl" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IdTitre" Type="Int32" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DateCreation" Type="DateTime" Precision="0" />
+    <Property Name="UpdateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DateUpdate" Type="DateTime" Precision="0" />
+    <Property Name="deletedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="deletedOn" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Aeroport" Relationship="CongresModel.FK_Participant_Aeroport" FromRole="Participant" ToRole="Aeroport" />
+    <NavigationProperty Name="Aeroport1" Relationship="CongresModel.FK_Participant_Aeroport1" FromRole="Participant" ToRole="Aeroport" />
+    <NavigationProperty Name="Congre" Relationship="CongresModel.FK_Participant_Congre" FromRole="Participant" ToRole="Congre" />
+    <NavigationProperty Name="Delegations" Relationship="CongresModel.FK_Participant_Delegations" FromRole="Participant" ToRole="Delegations" />
+    <NavigationProperty Name="Document" Relationship="CongresModel.FK_idParticipant" FromRole="Participant" ToRole="Document" />
+    <NavigationProperty Name="Hotel" Relationship="CongresModel.FK_Participant_Hotel" FromRole="Participant" ToRole="Hotel" />
+    <NavigationProperty Name="Organisateur" Relationship="CongresModel.FK_Participant_Organisateur" FromRole="Participant" ToRole="Organisateur" />
+    <NavigationProperty Name="Participant1" Relationship="CongresModel.FK_Participant_Participant" FromRole="Participant" ToRole="Participant1" />
+    <NavigationProperty Name="Participant2" Relationship="CongresModel.FK_Participant_Participant" FromRole="Participant1" ToRole="Participant" />
+    <NavigationProperty Name="Participant11" Relationship="CongresModel.FK_Participant_Participant1" FromRole="Participant" ToRole="Participant1" />
+    <NavigationProperty Name="Participant3" Relationship="CongresModel.FK_Participant_Participant1" FromRole="Participant1" ToRole="Participant" />
+    <NavigationProperty Name="Titres" Relationship="CongresModel.FK_Participant_Titres" FromRole="Participant" ToRole="Titres" />
+    <NavigationProperty Name="Vehicule" Relationship="CongresModel.FK_Participant_Vehicule" FromRole="Participant" ToRole="Vehicule" />
+    <NavigationProperty Name="Vehicule1" Relationship="CongresModel.FK_Participant_Vehicule_arrivee" FromRole="Participant" ToRole="Vehicule" />
+    <NavigationProperty Name="Vehicule2" Relationship="CongresModel.FK_Participant_Vehicule_autre" FromRole="Participant" ToRole="Vehicule" />
+    <NavigationProperty Name="Vehicule3" Relationship="CongresModel.FK_Participant_Vehicule_depart" FromRole="Participant" ToRole="Vehicule" />
+  </EntityType>
+  <Association Name="FK_Participant_Aeroport">
+    <End Type="CongresModel.Aeroport" Role="Aeroport" Multiplicity="0..1" />
+    <End Type="CongresModel.Participant" Role="Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Aeroport">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Participant">
+        <PropertyRef Name="IdAreoportArrivee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Aeroport1">
+    <End Type="CongresModel.Aeroport" Role="Aeroport" Multiplicity="0..1" />
+    <End Type="CongresModel.Participant" Role="Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Aeroport">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Participant">
+        <PropertyRef Name="IdAreoportDepart" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Congre">
+    <End Type="CongresModel.Congre" Role="Congre" Multiplicity="0..1" />
+    <End Type="CongresModel.Participant" Role="Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Congre">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Participant">
+        <PropertyRef Name="IdCongre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Delegations">
+    <End Type="CongresModel.Delegations" Role="Delegations" Multiplicity="0..1" />
+    <End Type="CongresModel.Participant" Role="Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Delegations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Participant">
+        <PropertyRef Name="IdDelegation" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_idParticipant">
+    <End Type="CongresModel.Participant" Role="Participant" Multiplicity="0..1" />
+    <End Type="CongresModel.Document" Role="Document" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Participant">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Document">
+        <PropertyRef Name="idParticipant" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Hotel">
+    <End Type="CongresModel.Hotel" Role="Hotel" Multiplicity="0..1" />
+    <End Type="CongresModel.Participant" Role="Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hotel">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Participant">
+        <PropertyRef Name="IdHotel" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Organisateur">
+    <End Type="CongresModel.Organisateur" Role="Organisateur" Multiplicity="0..1" />
+    <End Type="CongresModel.Participant" Role="Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Organisateur">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Participant">
+        <PropertyRef Name="IdAccompagnateur" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Participant">
+    <End Type="CongresModel.Participant" Role="Participant" Multiplicity="1" />
+    <End Type="CongresModel.Participant" Role="Participant1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Participant">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Participant1">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Participant1">
+    <End Type="CongresModel.Participant" Role="Participant" Multiplicity="0..1" />
+    <End Type="CongresModel.Participant" Role="Participant1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Participant">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Participant1">
+        <PropertyRef Name="IdParent" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Titres">
+    <End Type="CongresModel.Titres" Role="Titres" Multiplicity="0..1" />
+    <End Type="CongresModel.Participant" Role="Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Titres">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Participant">
+        <PropertyRef Name="IdTitre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Vehicule">
+    <End Type="CongresModel.Vehicule" Role="Vehicule" Multiplicity="0..1" />
+    <End Type="CongresModel.Participant" Role="Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicule">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Participant">
+        <PropertyRef Name="IdVehicule" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Vehicule_arrivee">
+    <End Type="CongresModel.Vehicule" Role="Vehicule" Multiplicity="0..1" />
+    <End Type="CongresModel.Participant" Role="Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicule">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Participant">
+        <PropertyRef Name="IdVehiculeArrivee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Vehicule_autre">
+    <End Type="CongresModel.Vehicule" Role="Vehicule" Multiplicity="0..1" />
+    <End Type="CongresModel.Participant" Role="Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicule">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Participant">
+        <PropertyRef Name="IdVehiculeAutre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participant_Vehicule_depart">
+    <End Type="CongresModel.Vehicule" Role="Vehicule" Multiplicity="0..1" />
+    <End Type="CongresModel.Participant" Role="Participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicule">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Participant">
+        <PropertyRef Name="IdVehiculeDepart" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,586 @@
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\GestionCongrees.dll.config
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\GestionCongrees.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\GestionCongrees.pdb
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\csc.exe
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\csc.exe.config
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\csc.rsp
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\csi.exe
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\csi.exe.config
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\csi.rsp
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.AppContext.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.Console.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.IO.Compression.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.Net.Http.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.Net.Sockets.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.ValueTuple.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.Xml.XPath.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\vbc.exe
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\vbc.exe.config
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\vbc.rsp
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\VBCSCompiler.exe
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\ClosedXML.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\DataAccess.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\DocumentFormat.OpenXml.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\EntityFramework.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\EntityFramework.SqlServer.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\ExcelNumberFormat.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\Helpers.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\ServiceClass.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\Xceed.Document.NET.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\Xceed.Words.NET.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\DataAccess.pdb
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\DataAccess.dll.config
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\Helpers.pdb
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\Helpers.dll.config
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\ServiceClass.pdb
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\ClosedXML.pdb
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\ClosedXML.xml
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\DocumentFormat.OpenXml.xml
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\EntityFramework.xml
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\EntityFramework.SqlServer.xml
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\ExcelNumberFormat.xml
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\obj\Debug\GestionCongrees.csproj.AssemblyReference.cache
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\obj\Debug\GestionCongrees.csproj.CoreCompileInputs.cache
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\obj\Debug\GestionCongrees.csproj.CopyComplete
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\obj\Debug\GestionCongrees.dll
+C:\Users\y.elhaidaoui\source\repos\econgres\GestionCongrees\obj\Debug\GestionCongrees.pdb
+E:\Repos\Econgres\GestionCongrees\bin\GestionCongrees.dll.config
+E:\Repos\Econgres\GestionCongrees\bin\GestionCongrees.dll
+E:\Repos\Econgres\GestionCongrees\bin\GestionCongrees.pdb
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\csc.exe
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\csc.exe.config
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\csc.rsp
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\csi.exe
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\csi.exe.config
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\csi.rsp
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.AppContext.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.Collections.Immutable.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.Console.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.Globalization.Calendars.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.IO.Compression.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.IO.FileSystem.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.Net.Http.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.Net.Sockets.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.Reflection.Metadata.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.ValueTuple.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.Xml.XPath.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\vbc.exe
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\vbc.exe.config
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\vbc.rsp
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\VBCSCompiler.exe
+E:\Repos\Econgres\GestionCongrees\bin\roslyn\VBCSCompiler.exe.config
+E:\Repos\Econgres\GestionCongrees\bin\BouncyCastle.Crypto.dll
+E:\Repos\Econgres\GestionCongrees\bin\ClosedXML.dll
+E:\Repos\Econgres\GestionCongrees\bin\DataAccess.dll
+E:\Repos\Econgres\GestionCongrees\bin\DocumentFormat.OpenXml.dll
+E:\Repos\Econgres\GestionCongrees\bin\EntityFramework.dll
+E:\Repos\Econgres\GestionCongrees\bin\EntityFramework.SqlServer.dll
+E:\Repos\Econgres\GestionCongrees\bin\ExcelNumberFormat.dll
+E:\Repos\Econgres\GestionCongrees\bin\Helpers.dll
+E:\Repos\Econgres\GestionCongrees\bin\itextsharp.dll
+E:\Repos\Econgres\GestionCongrees\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Repos\Econgres\GestionCongrees\bin\Microsoft.Web.Infrastructure.dll
+E:\Repos\Econgres\GestionCongrees\bin\NReco.PdfGenerator.dll
+E:\Repos\Econgres\GestionCongrees\bin\ServiceClass.dll
+E:\Repos\Econgres\GestionCongrees\bin\System.Web.Helpers.dll
+E:\Repos\Econgres\GestionCongrees\bin\System.Web.Mvc.dll
+E:\Repos\Econgres\GestionCongrees\bin\System.Web.Razor.dll
+E:\Repos\Econgres\GestionCongrees\bin\System.Web.WebPages.Deployment.dll
+E:\Repos\Econgres\GestionCongrees\bin\System.Web.WebPages.dll
+E:\Repos\Econgres\GestionCongrees\bin\System.Web.WebPages.Razor.dll
+E:\Repos\Econgres\GestionCongrees\bin\Xceed.Document.NET.dll
+E:\Repos\Econgres\GestionCongrees\bin\Xceed.Words.NET.dll
+E:\Repos\Econgres\GestionCongrees\bin\Select.HtmlToPdf.dll
+E:\Repos\Econgres\GestionCongrees\bin\DataAccess.pdb
+E:\Repos\Econgres\GestionCongrees\bin\DataAccess.dll.config
+E:\Repos\Econgres\GestionCongrees\bin\Helpers.pdb
+E:\Repos\Econgres\GestionCongrees\bin\Helpers.dll.config
+E:\Repos\Econgres\GestionCongrees\bin\ServiceClass.pdb
+E:\Repos\Econgres\GestionCongrees\bin\ClosedXML.pdb
+E:\Repos\Econgres\GestionCongrees\bin\ClosedXML.xml
+E:\Repos\Econgres\GestionCongrees\bin\DocumentFormat.OpenXml.xml
+E:\Repos\Econgres\GestionCongrees\bin\EntityFramework.xml
+E:\Repos\Econgres\GestionCongrees\bin\EntityFramework.SqlServer.xml
+E:\Repos\Econgres\GestionCongrees\bin\ExcelNumberFormat.xml
+E:\Repos\Econgres\GestionCongrees\bin\itextsharp.xml
+E:\Repos\Econgres\GestionCongrees\bin\NReco.PdfGenerator.xml
+E:\Repos\Econgres\GestionCongrees\bin\System.Web.Helpers.xml
+E:\Repos\Econgres\GestionCongrees\bin\System.Web.Mvc.xml
+E:\Repos\Econgres\GestionCongrees\bin\System.Web.Razor.xml
+E:\Repos\Econgres\GestionCongrees\bin\System.Web.WebPages.xml
+E:\Repos\Econgres\GestionCongrees\bin\System.Web.WebPages.Deployment.xml
+E:\Repos\Econgres\GestionCongrees\bin\System.Web.WebPages.Razor.xml
+E:\Repos\Econgres\GestionCongrees\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Repos\Econgres\GestionCongrees\bin\Select.HtmlToPdf.xml
+E:\Repos\Econgres\GestionCongrees\bin\fr\System.Web.Helpers.resources.dll
+E:\Repos\Econgres\GestionCongrees\bin\fr\System.Web.Mvc.resources.dll
+E:\Repos\Econgres\GestionCongrees\bin\fr\System.Web.Razor.resources.dll
+E:\Repos\Econgres\GestionCongrees\bin\fr\System.Web.WebPages.resources.dll
+E:\Repos\Econgres\GestionCongrees\bin\fr\System.Web.WebPages.Deployment.resources.dll
+E:\Repos\Econgres\GestionCongrees\bin\fr\System.Web.WebPages.Razor.resources.dll
+E:\Repos\Econgres\GestionCongrees\bin\Select.Html.dep
+E:\Repos\Econgres\GestionCongrees\obj\Debug\GestionCongrees.csproj.AssemblyReference.cache
+E:\Repos\Econgres\GestionCongrees\obj\Debug\GestionCongrees.csproj.CoreCompileInputs.cache
+E:\Repos\Econgres\GestionCongrees\obj\Debug\GestionCongrees.csproj.CopyComplete
+E:\Repos\Econgres\GestionCongrees\obj\Debug\GestionCongrees.dll
+E:\Repos\Econgres\GestionCongrees\obj\Debug\GestionCongrees.pdb
+I:\MyProjects\Econgres\GestionCongrees\bin\DataAccess.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\Helpers.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\ServiceClass.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\DataAccess.pdb
+I:\MyProjects\Econgres\GestionCongrees\bin\DataAccess.dll.config
+I:\MyProjects\Econgres\GestionCongrees\bin\Helpers.pdb
+I:\MyProjects\Econgres\GestionCongrees\bin\Helpers.dll.config
+I:\MyProjects\Econgres\GestionCongrees\bin\ServiceClass.pdb
+I:\MyProjects\Econgres\GestionCongrees\bin\Select.Html.dep
+I:\MyProjects\Econgres\GestionCongrees\obj\Debug\GestionCongrees.csproj.AssemblyReference.cache
+I:\MyProjects\Econgres\GestionCongrees\obj\Debug\GestionCongrees.csproj.CoreCompileInputs.cache
+I:\MyProjects\Econgres\GestionCongrees\obj\Debug\GestionCongrees.dll
+I:\MyProjects\Econgres\GestionCongrees\obj\Debug\GestionCongrees.pdb
+I:\MyProjects\Econgres\GestionCongrees\bin\Select.Pdf.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\Select.Pdf.xml
+I:\MyProjects\Econgres\GestionCongrees\bin\Select.Tools.dep
+I:\MyProjects\Econgres\GestionCongrees\bin\GestionCongrees.dll.config
+I:\MyProjects\Econgres\GestionCongrees\bin\GestionCongrees.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\GestionCongrees.pdb
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\csc.exe
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\csc.exe.config
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\csc.rsp
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\csi.exe
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\csi.exe.config
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\csi.rsp
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\Microsoft.CSharp.Core.targets
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\Microsoft.Managed.Core.targets
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\Microsoft.VisualBasic.Core.targets
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\Microsoft.Win32.Primitives.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.AppContext.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.Collections.Immutable.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.Console.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.Diagnostics.StackTrace.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.Globalization.Calendars.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.IO.Compression.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.IO.Compression.ZipFile.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.IO.FileSystem.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.IO.FileSystem.Primitives.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.Net.Http.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.Net.Sockets.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.Reflection.Metadata.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.Security.Cryptography.Encoding.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.Security.Cryptography.Primitives.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.Text.Encoding.CodePages.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.Threading.Tasks.Extensions.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.ValueTuple.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.Xml.ReaderWriter.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.Xml.XmlDocument.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.Xml.XPath.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\System.Xml.XPath.XDocument.dll
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\vbc.exe
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\vbc.exe.config
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\vbc.rsp
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\VBCSCompiler.exe
+I:\MyProjects\Econgres\GestionCongrees\bin\roslyn\VBCSCompiler.exe.config
+I:\MyProjects\Econgres\GestionCongrees\obj\Debug\GestionCongrees.csproj.CopyComplete
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\GestionCongrees.dll.config
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\GestionCongrees.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\GestionCongrees.pdb
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\csc.exe
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\csc.exe.config
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\csc.rsp
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\csi.exe
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\csi.exe.config
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\csi.rsp
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.AppContext.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.Collections.Immutable.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.Console.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.Globalization.Calendars.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.IO.Compression.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.IO.FileSystem.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.Net.Http.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.Net.Sockets.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.Reflection.Metadata.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.ValueTuple.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.Xml.XPath.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\vbc.exe
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\vbc.exe.config
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\vbc.rsp
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\VBCSCompiler.exe
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\roslyn\VBCSCompiler.exe.config
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\BouncyCastle.Crypto.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\ClosedXML.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\DataAccess.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\DocumentFormat.OpenXml.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\EntityFramework.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\EntityFramework.SqlServer.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\ExcelNumberFormat.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\Helpers.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\itextsharp.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\Microsoft.Web.Infrastructure.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\NReco.PdfGenerator.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\Select.HtmlToPdf.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\Select.Pdf.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\ServiceClass.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\System.Web.Helpers.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\System.Web.Mvc.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\System.Web.Razor.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\System.Web.WebPages.Deployment.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\System.Web.WebPages.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\System.Web.WebPages.Razor.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\Xceed.Document.NET.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\Xceed.Words.NET.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\DataAccess.pdb
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\DataAccess.dll.config
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\Helpers.pdb
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\Helpers.dll.config
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\ServiceClass.pdb
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\ClosedXML.pdb
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\ClosedXML.xml
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\DocumentFormat.OpenXml.xml
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\EntityFramework.xml
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\EntityFramework.SqlServer.xml
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\ExcelNumberFormat.xml
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\itextsharp.xml
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\NReco.PdfGenerator.xml
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\Select.HtmlToPdf.xml
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\Select.Pdf.xml
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\System.Web.Helpers.xml
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\System.Web.Mvc.xml
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\System.Web.Razor.xml
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\System.Web.WebPages.xml
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\System.Web.WebPages.Deployment.xml
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\System.Web.WebPages.Razor.xml
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\fr\System.Web.Helpers.resources.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\fr\System.Web.Mvc.resources.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\fr\System.Web.Razor.resources.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\fr\System.Web.WebPages.resources.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\fr\System.Web.WebPages.Deployment.resources.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\fr\System.Web.WebPages.Razor.resources.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\Select.Html.dep
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\bin\Select.Tools.dep
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\obj\Debug\GestionCongrees.csproj.AssemblyReference.cache
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\obj\Debug\GestionCongrees.csproj.CoreCompileInputs.cache
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\obj\Debug\GestionCongrees.csproj.CopyComplete
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\obj\Debug\GestionCongrees.dll
+E:\Master\S2\Java\Projet\Econgres\Econgres\GestionCongrees\obj\Debug\GestionCongrees.pdb
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\GestionCongrees.dll.config
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\GestionCongrees.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\GestionCongrees.pdb
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\csc.exe
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\csc.exe.config
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\csc.rsp
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\csi.exe
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\csi.exe.config
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\csi.rsp
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.AppContext.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.Collections.Immutable.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.Console.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.Globalization.Calendars.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.IO.Compression.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.IO.FileSystem.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.Net.Http.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.Net.Sockets.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.Reflection.Metadata.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.ValueTuple.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.Xml.XPath.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\vbc.exe
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\vbc.exe.config
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\vbc.rsp
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\VBCSCompiler.exe
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\roslyn\VBCSCompiler.exe.config
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\BouncyCastle.Crypto.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\ClosedXML.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\DataAccess.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\DocumentFormat.OpenXml.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\EntityFramework.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\EntityFramework.SqlServer.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\ExcelNumberFormat.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\Helpers.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\itextsharp.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\Microsoft.Web.Infrastructure.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\NReco.PdfGenerator.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\Select.HtmlToPdf.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\Select.Pdf.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\ServiceClass.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\System.Web.Helpers.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\System.Web.Mvc.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\System.Web.Razor.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\System.Web.WebPages.Deployment.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\System.Web.WebPages.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\System.Web.WebPages.Razor.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\Xceed.Document.NET.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\Xceed.Words.NET.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\DataAccess.pdb
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\DataAccess.dll.config
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\Helpers.pdb
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\Helpers.dll.config
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\ServiceClass.pdb
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\ClosedXML.pdb
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\ClosedXML.xml
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\DocumentFormat.OpenXml.xml
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\EntityFramework.xml
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\EntityFramework.SqlServer.xml
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\ExcelNumberFormat.xml
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\itextsharp.xml
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\NReco.PdfGenerator.xml
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\Select.HtmlToPdf.xml
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\Select.Pdf.xml
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\System.Web.Helpers.xml
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\System.Web.Mvc.xml
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\System.Web.Razor.xml
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\System.Web.WebPages.xml
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\System.Web.WebPages.Deployment.xml
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\System.Web.WebPages.Razor.xml
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\fr\System.Web.Helpers.resources.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\fr\System.Web.Mvc.resources.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\fr\System.Web.Razor.resources.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\fr\System.Web.WebPages.resources.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\fr\System.Web.WebPages.Deployment.resources.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\fr\System.Web.WebPages.Razor.resources.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\Select.Html.dep
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\bin\Select.Tools.dep
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\obj\Debug\schoolManagement.csproj.AssemblyReference.cache
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\obj\Debug\schoolManagement.csproj.CoreCompileInputs.cache
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\obj\Debug\schoolManagement.csproj.CopyComplete
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\obj\Debug\GestionCongrees.dll
+E:\Master\S2\Java\Projet\Econgres\schoolManagement\GestionCongrees\obj\Debug\GestionCongrees.pdb
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\GestionCongrees.dll.config
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\GestionCongrees.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\GestionCongrees.pdb
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\csc.exe
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\csc.exe.config
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\csc.rsp
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\csi.exe
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\csi.exe.config
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\csi.rsp
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\Microsoft.Managed.Core.targets
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.AppContext.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.Collections.Immutable.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.Console.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.Globalization.Calendars.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.IO.Compression.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.IO.FileSystem.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.Net.Http.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.Net.Sockets.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.Reflection.Metadata.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.ValueTuple.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.Xml.XmlDocument.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.Xml.XPath.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\vbc.exe
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\vbc.exe.config
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\vbc.rsp
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\VBCSCompiler.exe
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\roslyn\VBCSCompiler.exe.config
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\BouncyCastle.Crypto.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\ClosedXML.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\DataAccess.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\DocumentFormat.OpenXml.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\EntityFramework.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\EntityFramework.SqlServer.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\ExcelNumberFormat.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\Helpers.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\itextsharp.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\Microsoft.Web.Infrastructure.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\NReco.PdfGenerator.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\Select.HtmlToPdf.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\Select.Pdf.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\ServiceClass.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\System.Web.Helpers.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\System.Web.Mvc.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\System.Web.Razor.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\System.Web.WebPages.Deployment.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\System.Web.WebPages.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\System.Web.WebPages.Razor.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\Xceed.Document.NET.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\Xceed.Words.NET.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\DataAccess.pdb
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\DataAccess.dll.config
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\Helpers.pdb
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\Helpers.dll.config
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\ServiceClass.pdb
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\ClosedXML.pdb
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\ClosedXML.xml
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\DocumentFormat.OpenXml.xml
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\EntityFramework.xml
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\EntityFramework.SqlServer.xml
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\ExcelNumberFormat.xml
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\itextsharp.xml
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\NReco.PdfGenerator.xml
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\Select.HtmlToPdf.xml
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\Select.Pdf.xml
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\System.Web.Helpers.xml
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\System.Web.Mvc.xml
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\System.Web.Razor.xml
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\System.Web.WebPages.xml
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\System.Web.WebPages.Deployment.xml
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\System.Web.WebPages.Razor.xml
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\fr\System.Web.Helpers.resources.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\fr\System.Web.Mvc.resources.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\fr\System.Web.Razor.resources.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\fr\System.Web.WebPages.resources.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\fr\System.Web.WebPages.Deployment.resources.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\fr\System.Web.WebPages.Razor.resources.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\Select.Html.dep
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\bin\Select.Tools.dep
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\obj\Debug\schoolManagement.csproj.AssemblyReference.cache
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\obj\Debug\schoolManagement.csproj.CoreCompileInputs.cache
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\obj\Debug\schoolManagement.csproj.CopyComplete
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\obj\Debug\GestionCongrees.dll
+D:\All Files\Master\S2\Java\schoolManagement\schoolManagement\GestionCongrees\obj\Debug\GestionCongrees.pdb

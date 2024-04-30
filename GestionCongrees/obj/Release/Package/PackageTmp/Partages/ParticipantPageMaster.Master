@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ParticipantPageMaster.master.cs" Inherits="GestionCongrees.Partages.ParticipantPageMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/bootstrap/css/bootstrap-rtl.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css">
+    <link href="../assets/admin/pages/css/tasks-rtl.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/css/plugins-rtl.css" rel="stylesheet" type="text/css">
+    <link href="../assets/admin/layout3/css/layout-rtl.css" rel="stylesheet" type="text/css">
+    <link href="../assets/admin/layout3/css/custom-rtl.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/bootstrap/css/bootstrap-rtl.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../assets/global/plugins/clockface/css/clockface.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/global/plugins/bootstrap-datepicker/css/datepicker3.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/global/plugins/bootstrap-colorpicker/css/colorpicker.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
+    <link href="../assets/global/css/components-rounded.css" id="style_components" rel="stylesheet" type="text/css">
+    <link href="../assets/global/css/plugins-rtl.css" rel="stylesheet" type="text/css">
+    <link href="../assets/admin/layout3/css/layout-rtl.css" rel="stylesheet" type="text/css">
+    <link href="../assets/admin/layout3/css/themes/default-rtl.css" rel="stylesheet" type="text/css" id="style_color">
+    <link href="../assets/admin/layout3/css/custom-rtl.css" rel="stylesheet" type="text/css">
+    <link href="../assets/style.css" rel="stylesheet" />
+    <link href="../assets/styleParticipant.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="body">
+                <tr>
+                    <td class="center" align="center" valign="top">
+                        <div class="page-header" align="center" style="height: fit-content; margin-bottom: 100px;">
+                            <div class="page-header-inner row">
+                                <div class="col-md-3 page-logo">
+                                    <img src="../assets/admin/layout3/img/logoM.png" alt="logo" style="padding-top: 10px; padding-bottom: 15px; margin-left: 90px;">
+                                    <div class="menu-toggler sidebar-toggler">
+                                        <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+                                    </div>
+                                </div>
+                                <div class="col-md-6" style="float: right; padding-right: 50px;">
+                                    <div class="row">
+                                        <h7 class="col-md-5" style="padding-top: 35px; padding-bottom: 10px;">Langue / Language</h7>
+                                        <div class="col-md-5" style="padding-top: 34px; padding-bottom: 10px;">
+                                            <asp:DropDownList runat="server" ID="Language" OnSelectedIndexChanged="Language_SelectedIndexChanged" AutoPostBack="true" CssClass="form-control input-sm menu-dropdown classic-menu-dropdown red-haze ">
+                                                <asp:ListItem Value="1" Selected="True" style="background-image: url(../Images/Anglais.png);">   Anglais </asp:ListItem>
+                                                <asp:ListItem Value="2" style="background-image: url(../Images/France.png);"> Français   </asp:ListItem>
+                                                <asp:ListItem Value="3" class="arabe" style="background-image: url(../Images/Arabe.png);">العربية</asp:ListItem>
+                                            </asp:DropDownList>
+                                            <%--   <dl id="sample" class="dropdown">
+                                                <dd>
+                                                    <ul>
+                                                        <li><a href="#">Brazil<img class="flag" src="" alt="" /><span class="value">BR</span></a></li>
+                                                        <li><a href="#">France<img class="flag" src="" alt="" /><span class="value">FR</span></a></li>
+                                                        <li><a href="#">France<img class="flag" src="" alt="" /><span class="value">FR</span></a></li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>--%>
+                                        </div>
+                                        <h7 class="col-md-2" style="padding-top: 37px; padding-bottom: 10px;">
+                                            اللغة
+                                        </h7>
+                                    </div>
+                                </div>
+                                <div class="col-md-3" >
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <div class="col-md-12" style="padding-top: 35px; padding-bottom: 10px;">
+                                                <a href="Acceuil.aspx" Class="btn green btn-sm"> Acceuil</a> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="container content" align="center" style="width: 80%;">
+                            <tr>
+                                <td style="border-radius: 4px;">
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="page-footer" align="center">
+                            <tr>
+                                <td class="center" align="center">
+                                    <table class="container" align="center">
+                                        <tr>
+                                            <td>
+                                                <table class="row">
+                                                    <tr>
+                                                        <td class="wrapper">
+                                                            <table class=" columns">
+                                                                <tr>
+                                                                    <td class="" style="color: #33404c;">&copy; Chambre des représentants 2023.
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    <script>
+
+
+</script>
+</body>
+</html>

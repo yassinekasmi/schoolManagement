@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CongresModelStoreContainer" CdmEntityContainer="CongresEntities">
+    <EntitySetMapping Name="Aeroport">
+      <EntityTypeMapping TypeName="CongresModel.Aeroport">
+        <MappingFragment StoreEntitySet="Aeroport">
+          <ScalarProperty Name="nomAnglais" ColumnName="nomAnglais" />
+          <ScalarProperty Name="nomArabe" ColumnName="nomArabe" />
+          <ScalarProperty Name="ville" ColumnName="ville" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Congre">
+      <EntityTypeMapping TypeName="CongresModel.Congre">
+        <MappingFragment StoreEntitySet="Congre">
+          <ScalarProperty Name="statutcongre" ColumnName="statutcongre" />
+          <ScalarProperty Name="organismeId" ColumnName="organismeId" />
+          <ScalarProperty Name="details" ColumnName="details" />
+          <ScalarProperty Name="dateFin" ColumnName="dateFin" />
+          <ScalarProperty Name="dateDebut" ColumnName="dateDebut" />
+          <ScalarProperty Name="titre" ColumnName="titre" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CongreAeroport">
+      <EntityTypeMapping TypeName="CongresModel.CongreAeroport">
+        <MappingFragment StoreEntitySet="CongreAeroport">
+          <ScalarProperty Name="idAeroport" ColumnName="idAeroport" />
+          <ScalarProperty Name="idCongre" ColumnName="idCongre" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CongreHotel">
+      <EntityTypeMapping TypeName="CongresModel.CongreHotel">
+        <MappingFragment StoreEntitySet="CongreHotel">
+          <ScalarProperty Name="idHotel" ColumnName="idHotel" />
+          <ScalarProperty Name="idCongre" ColumnName="idCongre" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CongreOrganisateur">
+      <EntityTypeMapping TypeName="CongresModel.CongreOrganisateur">
+        <MappingFragment StoreEntitySet="CongreOrganisateur">
+          <ScalarProperty Name="idMission" ColumnName="idMission" />
+          <ScalarProperty Name="idOrganisateur" ColumnName="idOrganisateur" />
+          <ScalarProperty Name="idCongre" ColumnName="idCongre" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Delegations">
+      <EntityTypeMapping TypeName="CongresModel.Delegations">
+        <MappingFragment StoreEntitySet="Delegations">
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="Delegation" ColumnName="Delegation" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Document">
+      <EntityTypeMapping TypeName="CongresModel.Document">
+        <MappingFragment StoreEntitySet="Document">
+          <ScalarProperty Name="idParticipant" ColumnName="idParticipant" />
+          <ScalarProperty Name="idCongre" ColumnName="idCongre" />
+          <ScalarProperty Name="documentUrl" ColumnName="documentUrl" />
+          <ScalarProperty Name="titre" ColumnName="titre" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Entite">
+      <EntityTypeMapping TypeName="CongresModel.Entite">
+        <MappingFragment StoreEntitySet="Entite">
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="tel" ColumnName="tel" />
+          <ScalarProperty Name="adresse" ColumnName="adresse" />
+          <ScalarProperty Name="specialite" ColumnName="specialite" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Hotel">
+      <EntityTypeMapping TypeName="CongresModel.Hotel">
+        <MappingFragment StoreEntitySet="Hotel">
+          <ScalarProperty Name="nomAnglais" ColumnName="nomAnglais" />
+          <ScalarProperty Name="nomArabe" ColumnName="nomArabe" />
+          <ScalarProperty Name="siteWeb" ColumnName="siteWeb" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="tel" ColumnName="tel" />
+          <ScalarProperty Name="adresse" ColumnName="adresse" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mission">
+      <EntityTypeMapping TypeName="CongresModel.Mission">
+        <MappingFragment StoreEntitySet="Mission">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="titre" ColumnName="titre" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Organisateur">
+      <EntityTypeMapping TypeName="CongresModel.Organisateur">
+        <MappingFragment StoreEntitySet="Organisateur">
+          <ScalarProperty Name="nomPrenomTel" ColumnName="nomPrenomTel" />
+          <ScalarProperty Name="cin" ColumnName="cin" />
+          <ScalarProperty Name="specialite" ColumnName="specialite" />
+          <ScalarProperty Name="photoUrl" ColumnName="photoUrl" />
+          <ScalarProperty Name="idEntite" ColumnName="idEntite" />
+          <ScalarProperty Name="tel" ColumnName="tel" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="prenom" ColumnName="prenom" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Organisme">
+      <EntityTypeMapping TypeName="CongresModel.Organisme">
+        <MappingFragment StoreEntitySet="Organisme">
+          <ScalarProperty Name="details" ColumnName="details" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pays">
+      <EntityTypeMapping TypeName="CongresModel.pays">
+        <MappingFragment StoreEntitySet="pays">
+          <ScalarProperty Name="tele" ColumnName="tele" />
+          <ScalarProperty Name="ar" ColumnName="ar" />
+          <ScalarProperty Name="en" ColumnName="en" />
+          <ScalarProperty Name="fr" ColumnName="fr" />
+          <ScalarProperty Name="code_pays" ColumnName="code_pays" />
+          <ScalarProperty Name="id_pays" ColumnName="id_pays" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pays2">
+      <EntityTypeMapping TypeName="CongresModel.pays2">
+        <MappingFragment StoreEntitySet="pays2">
+          <ScalarProperty Name="tele" ColumnName="tele" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Titres">
+      <EntityTypeMapping TypeName="CongresModel.Titres">
+        <MappingFragment StoreEntitySet="Titres">
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="Titre" ColumnName="Titre" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="CongresModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="mdp" ColumnName="mdp" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrganisateurAeroport">
+      <EntityTypeMapping TypeName="CongresModel.OrganisateurAeroport">
+        <MappingFragment StoreEntitySet="OrganisateurAeroport">
+          <ScalarProperty Name="HeureF" ColumnName="HeureF" />
+          <ScalarProperty Name="HeureD" ColumnName="HeureD" />
+          <ScalarProperty Name="DateJour" ColumnName="DateJour" />
+          <ScalarProperty Name="IdAeroport" ColumnName="IdAeroport" />
+          <ScalarProperty Name="IdOrganisateur" ColumnName="IdOrganisateur" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrganisateurHotel">
+      <EntityTypeMapping TypeName="CongresModel.OrganisateurHotel">
+        <MappingFragment StoreEntitySet="OrganisateurHotel">
+          <ScalarProperty Name="HeureF" ColumnName="HeureF" />
+          <ScalarProperty Name="HeureD" ColumnName="HeureD" />
+          <ScalarProperty Name="DateJour" ColumnName="DateJour" />
+          <ScalarProperty Name="IdHotel" ColumnName="IdHotel" />
+          <ScalarProperty Name="IdOrganisateur" ColumnName="IdOrganisateur" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vehicule">
+      <EntityTypeMapping TypeName="CongresModel.Vehicule">
+        <MappingFragment StoreEntitySet="Vehicule">
+          <ScalarProperty Name="nomPrenomTel" ColumnName="nomPrenomTel" />
+          <ScalarProperty Name="tel" ColumnName="tel" />
+          <ScalarProperty Name="prenom" ColumnName="prenom" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="cin" ColumnName="cin" />
+          <ScalarProperty Name="matriculeType" ColumnName="matriculeType" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="IdChauffeur" ColumnName="IdChauffeur" />
+          <ScalarProperty Name="modele" ColumnName="modele" />
+          <ScalarProperty Name="marque" ColumnName="marque" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="matricule" ColumnName="matricule" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="UpdateParticipantTraces" FunctionName="CongresModel.Store.UpdateParticipantTraces" />
+    <EntitySetMapping Name="ParticipantTraces">
+      <EntityTypeMapping TypeName="CongresModel.ParticipantTraces">
+        <MappingFragment StoreEntitySet="ParticipantTraces">
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+          <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="IdTitre" ColumnName="IdTitre" />
+          <ScalarProperty Name="photoUrl" ColumnName="photoUrl" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="IdParent" ColumnName="IdParent" />
+          <ScalarProperty Name="motPasse" ColumnName="motPasse" />
+          <ScalarProperty Name="IdCongre" ColumnName="IdCongre" />
+          <ScalarProperty Name="IdVehiculeAutre" ColumnName="IdVehiculeAutre" />
+          <ScalarProperty Name="IdVehiculeDepart" ColumnName="IdVehiculeDepart" />
+          <ScalarProperty Name="IdVehiculeArrivee" ColumnName="IdVehiculeArrivee" />
+          <ScalarProperty Name="IdVehicule" ColumnName="IdVehicule" />
+          <ScalarProperty Name="NonOfficiel" ColumnName="NonOfficiel" />
+          <ScalarProperty Name="IdAccompagnateur" ColumnName="IdAccompagnateur" />
+          <ScalarProperty Name="IdHotelUpdate" ColumnName="IdHotelUpdate" />
+          <ScalarProperty Name="IdHotel" ColumnName="IdHotel" />
+          <ScalarProperty Name="HeureDepartUpdate" ColumnName="HeureDepartUpdate" />
+          <ScalarProperty Name="HeureDepart" ColumnName="HeureDepart" />
+          <ScalarProperty Name="DateDepartUpdate" ColumnName="DateDepartUpdate" />
+          <ScalarProperty Name="DateDepart" ColumnName="DateDepart" />
+          <ScalarProperty Name="NvolDepartUpdate" ColumnName="NvolDepartUpdate" />
+          <ScalarProperty Name="NvolDepart" ColumnName="NvolDepart" />
+          <ScalarProperty Name="IdAreoportDepartUpdate" ColumnName="IdAreoportDepartUpdate" />
+          <ScalarProperty Name="IdAreoportDepart" ColumnName="IdAreoportDepart" />
+          <ScalarProperty Name="PaysDestination" ColumnName="PaysDestination" />
+          <ScalarProperty Name="IdAreoportArriveeUpdate" ColumnName="IdAreoportArriveeUpdate" />
+          <ScalarProperty Name="IdAreoportArrivee" ColumnName="IdAreoportArrivee" />
+          <ScalarProperty Name="HeureArriveeUpdate" ColumnName="HeureArriveeUpdate" />
+          <ScalarProperty Name="HeureArrivee" ColumnName="HeureArrivee" />
+          <ScalarProperty Name="DateArriveeUpdate" ColumnName="DateArriveeUpdate" />
+          <ScalarProperty Name="DateArrivee" ColumnName="DateArrivee" />
+          <ScalarProperty Name="NvolArriveeUpdate" ColumnName="NvolArriveeUpdate" />
+          <ScalarProperty Name="NvolArrivee" ColumnName="NvolArrivee" />
+          <ScalarProperty Name="NPassportDelegue" ColumnName="NPassportDelegue" />
+          <ScalarProperty Name="TitreUpdate" ColumnName="TitreUpdate" />
+          <ScalarProperty Name="Titre" ColumnName="Titre" />
+          <ScalarProperty Name="tel" ColumnName="tel" />
+          <ScalarProperty Name="prenomUpdate" ColumnName="prenomUpdate" />
+          <ScalarProperty Name="prenom" ColumnName="prenom" />
+          <ScalarProperty Name="nomUpdate" ColumnName="nomUpdate" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="PaysOrigine" ColumnName="PaysOrigine" />
+          <ScalarProperty Name="IdDelegation" ColumnName="IdDelegation" />
+          <ScalarProperty Name="idParticipantTraces" ColumnName="idParticipantTraces" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="CongresModel.Roles">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="NomFR" ColumnName="NomFR" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="RolesUsers" TypeName="CongresModel.RolesUsers" StoreEntitySet="RolesUsers">
+      <EndProperty Name="Users">
+        <ScalarProperty Name="id" ColumnName="UserId" />
+      </EndProperty>
+      <EndProperty Name="Roles">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="Participant">
+      <EntityTypeMapping TypeName="CongresModel.Participant">
+        <MappingFragment StoreEntitySet="Participant">
+          <ScalarProperty Name="deletedOn" ColumnName="deletedOn" />
+          <ScalarProperty Name="deletedBy" ColumnName="deletedBy" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+          <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+          <ScalarProperty Name="DateCreation" ColumnName="DateCreation" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="IdTitre" ColumnName="IdTitre" />
+          <ScalarProperty Name="photoUrl" ColumnName="photoUrl" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="IdParent" ColumnName="IdParent" />
+          <ScalarProperty Name="motPasse" ColumnName="motPasse" />
+          <ScalarProperty Name="IdCongre" ColumnName="IdCongre" />
+          <ScalarProperty Name="IdVehiculeAutre" ColumnName="IdVehiculeAutre" />
+          <ScalarProperty Name="IdVehiculeDepart" ColumnName="IdVehiculeDepart" />
+          <ScalarProperty Name="IdVehiculeArrivee" ColumnName="IdVehiculeArrivee" />
+          <ScalarProperty Name="IdVehicule" ColumnName="IdVehicule" />
+          <ScalarProperty Name="NonOfficiel" ColumnName="NonOfficiel" />
+          <ScalarProperty Name="IdAccompagnateur" ColumnName="IdAccompagnateur" />
+          <ScalarProperty Name="IdHotelUpdate" ColumnName="IdHotelUpdate" />
+          <ScalarProperty Name="IdHotel" ColumnName="IdHotel" />
+          <ScalarProperty Name="HeureDepartUpdate" ColumnName="HeureDepartUpdate" />
+          <ScalarProperty Name="HeureDepart" ColumnName="HeureDepart" />
+          <ScalarProperty Name="DateDepartUpdate" ColumnName="DateDepartUpdate" />
+          <ScalarProperty Name="DateDepart" ColumnName="DateDepart" />
+          <ScalarProperty Name="NvolDepartUpdate" ColumnName="NvolDepartUpdate" />
+          <ScalarProperty Name="NvolDepart" ColumnName="NvolDepart" />
+          <ScalarProperty Name="IdAreoportDepartUpdate" ColumnName="IdAreoportDepartUpdate" />
+          <ScalarProperty Name="IdAreoportDepart" ColumnName="IdAreoportDepart" />
+          <ScalarProperty Name="PaysDestination" ColumnName="PaysDestination" />
+          <ScalarProperty Name="IdAreoportArriveeUpdate" ColumnName="IdAreoportArriveeUpdate" />
+          <ScalarProperty Name="IdAreoportArrivee" ColumnName="IdAreoportArrivee" />
+          <ScalarProperty Name="HeureArriveeUpdate" ColumnName="HeureArriveeUpdate" />
+          <ScalarProperty Name="HeureArrivee" ColumnName="HeureArrivee" />
+          <ScalarProperty Name="DateArriveeUpdate" ColumnName="DateArriveeUpdate" />
+          <ScalarProperty Name="DateArrivee" ColumnName="DateArrivee" />
+          <ScalarProperty Name="NvolArriveeUpdate" ColumnName="NvolArriveeUpdate" />
+          <ScalarProperty Name="NvolArrivee" ColumnName="NvolArrivee" />
+          <ScalarProperty Name="NPassportDelegue" ColumnName="NPassportDelegue" />
+          <ScalarProperty Name="TitreUpdate" ColumnName="TitreUpdate" />
+          <ScalarProperty Name="Titre" ColumnName="Titre" />
+          <ScalarProperty Name="tel" ColumnName="tel" />
+          <ScalarProperty Name="prenomUpdate" ColumnName="prenomUpdate" />
+          <ScalarProperty Name="prenom" ColumnName="prenom" />
+          <ScalarProperty Name="nomUpdate" ColumnName="nomUpdate" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="PaysOrigine" ColumnName="PaysOrigine" />
+          <ScalarProperty Name="IdDelegation" ColumnName="IdDelegation" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
